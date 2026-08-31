@@ -87,14 +87,14 @@ export default function FreeAuditSection() {
             <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2.5">
               <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Need Answers Right Now?</div>
               <a
-                href="https://wa.me/61411914157?text=Hi%20Bilal,%20I'm%20a%20business%20owner%20and%20I'd%20like%20a%20quick%20free%20audit%20review%20over%20WhatsApp."
+                href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'm%20a%20business%20owner%20and%20I'd%20like%20a%20quick%20free%20audit%20review%20over%20WhatsApp."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300 font-extrabold text-sm transition-all"
               >
                 <div className="flex items-center gap-2">
                   <MessageSquare className="w-5 h-5 text-emerald-600" />
-                  <span>Chat Direct on WhatsApp (+61 411 914 157)</span>
+                  <span>Chat Direct on WhatsApp (+61 401 164 987)</span>
                 </div>
                 <span>→</span>
               </a>
@@ -121,7 +121,7 @@ export default function FreeAuditSection() {
                     We typically deliver completed audits within 4–6 business hours via WhatsApp / Email.
                   </div>
                   <a
-                    href="https://wa.me/61411914157?text=Hi%20Bilal,%20I%20just%20submitted%20the%20audit%20form%20for%20my%20business."
+                    href="https://wa.me/61401164987?text=Hi%20Bilal,%20I%20just%20submitted%20the%20audit%20form%20for%20my%20business."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 text-white font-bold text-sm shadow-md hover:bg-emerald-700 transition-all"
@@ -191,7 +191,7 @@ export default function FreeAuditSection() {
                       <input
                         type="text"
                         required
-                        placeholder="e.g. Gold Coast QLD (Pimpama, Coomera)"
+                        placeholder="e.g. Gold Coast QLD (Robina, Coomera)"
                         value={formData.suburb}
                         onChange={(e) => setFormData({ ...formData, suburb: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all text-slate-900 font-medium"
@@ -222,7 +222,7 @@ export default function FreeAuditSection() {
                       <input
                         type="tel"
                         required
-                        placeholder="e.g. 0411 914 157"
+                        placeholder="e.g. 0401 164 987"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all text-slate-900 font-medium"

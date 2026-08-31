@@ -95,7 +95,7 @@ export default function HeroSection() {
             {/* CTA Buttons Row */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2">
               <a
-                href="https://wa.me/61411914157?text=Hi%20Bilal,%20I'm%20a%20business%20owner.%20I'd%20like%20to%20claim%20my%20Free%20Local%20SEO%20Audit%20and%20ranking%20roadmap."
+                href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'm%20a%20business%20owner.%20I'd%20like%20to%20claim%20my%20Free%20Local%20SEO%20Audit%20and%20ranking%20roadmap."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold text-base shadow-lg shadow-emerald-600/25 hover:shadow-xl hover:shadow-emerald-600/30 transition-all hover:translate-y-[-2px]"

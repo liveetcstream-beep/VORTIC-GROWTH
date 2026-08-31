@@ -61,12 +61,12 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 font-medium">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <a href="tel:+61411914157" className="hover:text-white">+61 411 914 157</a>
+                <a href="tel:+61401164987" className="hover:text-white">+61 401 164 987</a>
               </li>
               <li className="flex items-center gap-2">
                 <MessageSquare className="w-4 h-4 text-emerald-400 shrink-0" />
                 <a
-                  href="https://wa.me/61411914157?text=Hi%20Bilal,%20I'm%20reaching%20out%20from%20vorticgrowth.com"
+                  href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'm%20reaching%20out%20from%20vorticgrowth.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white"
@@ -133,7 +133,7 @@ export default function Footer() {
       {/* Floating Sticky WhatsApp Button on Bottom Right */}
       <aside aria-label="Quick WhatsApp Contact" className="fixed bottom-6 right-6 z-50">
         <a
-          href="https://wa.me/61411914157?text=Hi%20Bilal,%20I'm%20on%20vorticgrowth.com%20and%20I'd%20like%20to%20chat%20about%20Local%20SEO."
+          href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'm%20on%20vorticgrowth.com%20and%20I'd%20like%20to%20chat%20about%20Local%20SEO."
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2.5 px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm shadow-2xl shadow-emerald-600/50 hover:scale-105 transition-all group"

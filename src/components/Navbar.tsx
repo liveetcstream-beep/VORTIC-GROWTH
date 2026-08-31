@@ -11,7 +11,6 @@ import {
   Hammer,
   Scale,
   Sun,
-  ShieldCheck,
 } from "lucide-react";
 
 export default function Navbar() {
@@ -34,7 +33,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 glass-nav border-b border-slate-200/80">
       
       {/* Sleek Top Status Ticker */}
-      <div className="bg-slate-950 text-white text-xs py-1.5 px-4 border-b border-slate-800/80">
+      <div className="bg-slate-950 text-white text-xs py-2 px-4 border-b border-slate-800/80">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse-subtle"></span>
@@ -48,13 +47,13 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-4 text-slate-300">
             <a
-              href="https://wa.me/61411914157?text=Hi%20Bilal,%20I'm%20interested%20in%20scaling%20my%20local%20business%20with%20Vortic%20Growth."
+              href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'm%20interested%20in%20scaling%20my%20local%20business%20with%20Vortic%20Growth."
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-emerald-400 transition-colors font-semibold flex items-center gap-1.5"
             >
               <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Direct Line: +61 411 914 157</span>
+              <span>Direct Line: +61 401 164 987</span>
             </a>
           </div>
         </div>
@@ -62,21 +61,26 @@ export default function Navbar() {
 
       {/* Main Nav Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           
-          {/* Brand Logo */}
-          <a href="/" className="flex items-center gap-3 group">
+          {/* Brand Logo - Made Larger */}
+          <a href="/" className="flex items-center gap-3 group py-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/vorticgrowth-logo.png"
               alt="Vortic Growth"
-              className="h-10 sm:h-11 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+              className="h-14 sm:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
             />
           </a>
 
-          {/* Desktop Nav Items (Clean & Streamlined) */}
+          {/* Desktop Nav Items (Clean, Streamlined: Home, Specializations, Case Studies, ROI Calculator, Pricing) */}
           <nav className="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-700">
             
+            {/* Home Link */}
+            <a href="/" className="hover:text-indigo-600 transition-colors">
+              Home
+            </a>
+
             {/* Specializations Dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
@@ -157,10 +161,6 @@ export default function Navbar() {
               )}
             </div>
 
-            <a href="/#suburb-engine" className="hover:text-indigo-600 transition-colors">
-              The Suburb Engine
-            </a>
-
             <a href="/#case-study" className="hover:text-indigo-600 transition-colors">
               Case Studies
             </a>
@@ -173,16 +173,12 @@ export default function Navbar() {
               Pricing
             </a>
 
-            <a href="/#faq" className="hover:text-indigo-600 transition-colors">
-              FAQ
-            </a>
-
           </nav>
 
           {/* Desktop Right CTAs */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="https://wa.me/61411914157?text=Hi%20Bilal,%20I'd%20like%20to%20claim%20a%20Free%20Local%20SEO%20Audit."
+              href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'd%20like%20to%20claim%20a%20Free%20Local%20SEO%20Audit."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-emerald-300 bg-emerald-50 text-emerald-900 text-xs font-extrabold hover:bg-emerald-100 transition-all shadow-sm"
@@ -219,7 +215,14 @@ export default function Navbar() {
         <div className="lg:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 shadow-2xl">
           
           <div className="space-y-1 pb-3 border-b border-slate-100">
-            <div className="text-xs font-extrabold text-slate-400 uppercase tracking-wider pb-1">
+            <a
+              href="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block py-1.5 text-slate-900 font-extrabold text-sm"
+            >
+              Home
+            </a>
+            <div className="text-xs font-extrabold text-slate-400 uppercase tracking-wider pt-2 pb-1">
               Industry Specializations
             </div>
             <a
@@ -250,13 +253,6 @@ export default function Navbar() {
 
           <div className="flex flex-col space-y-2.5 font-bold text-slate-800 text-sm pt-2">
             <a
-              href="/#suburb-engine"
-              onClick={() => setMobileMenuOpen(false)}
-              className="py-1.5 hover:text-indigo-600"
-            >
-              The Suburb Engine
-            </a>
-            <a
               href="/#case-study"
               onClick={() => setMobileMenuOpen(false)}
               className="py-1.5 hover:text-indigo-600"
@@ -277,24 +273,17 @@ export default function Navbar() {
             >
               Pricing & Retainers
             </a>
-            <a
-              href="/#faq"
-              onClick={() => setMobileMenuOpen(false)}
-              className="py-1.5 hover:text-indigo-600"
-            >
-              FAQ
-            </a>
           </div>
 
           <div className="pt-4 border-t border-slate-200 flex flex-col gap-3">
             <a
-              href="https://wa.me/61411914157?text=Hi%20Bilal,%20I'd%20like%20a%20Free%20Local%20SEO%20Audit."
+              href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'd%20like%20a%20Free%20Local%20SEO%20Audit."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-900 font-extrabold text-sm"
             >
               <MessageSquare className="w-4 h-4 text-emerald-600" />
-              <span>Chat Direct on WhatsApp</span>
+              <span>Chat Direct on WhatsApp (+61 401 164 987)</span>
             </a>
             <a
               href="/#audit-form"

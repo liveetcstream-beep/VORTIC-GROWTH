@@ -56,7 +56,7 @@ export default function PricingPackages() {
         "First job won pays for entire year of lease",
       ],
       ctaText: "Inquire Asset Availability",
-      ctaLink: "https://wa.me/61411914157?text=Hi%20Bilal,%20I'd%20like%20to%20check%20Exclusive%20Asset%20Lease%20availability%20for%20my%20trade.",
+      ctaLink: "https://wa.me/61401164987?text=Hi%20Bilal,%20I'd%20like%20to%20check%20Exclusive%20Asset%20Lease%20availability%20for%20my%20trade.",
       badge: "Turnkey Inbound Asset",
     },
   ];

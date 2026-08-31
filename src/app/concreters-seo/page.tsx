@@ -137,7 +137,7 @@ export default function ConcretersSeoPage() {
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2">
                 <a
-                  href="https://wa.me/61411914157?text=Hi%20Bilal,%20I'm%20a%20Concrete%20Contractor.%20I'd%20like%20to%20claim%20my%20Free%20Concreter%20SEO%20&%20Suburb%20Audit."
+                  href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'm%20a%20Concrete%20Contractor.%20I'd%20like%20to%20claim%20my%20Free%20Concreter%20SEO%20&%20Suburb%20Audit."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold text-base shadow-lg shadow-emerald-600/25 hover:translate-y-[-2px] transition-all"
@@ -621,7 +621,7 @@ export default function ConcretersSeoPage() {
                   <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Direct phone & form forwarding</span></li>
                 </ul>
               </div>
-              <a href="https://wa.me/61411914157?text=Hi%20Bilal,%20I'd%20like%20to%20check%20Concreter%20Asset%20Lease%20availability." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl bg-slate-900 text-white font-extrabold text-sm text-center block">
+              <a href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'd%20like%20to%20check%20Concreter%20Asset%20Lease%20availability." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl bg-slate-900 text-white font-extrabold text-sm text-center block">
                 Inquire Asset Lease
               </a>
             </div>
@@ -654,14 +654,14 @@ export default function ConcretersSeoPage() {
               <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2.5">
                 <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Direct WhatsApp Strategy Line:</div>
                 <a
-                  href="https://wa.me/61411914157?text=Hi%20Bilal,%20I'm%20a%20concreter%20and%20I'd%20like%20a%20quick%20free%20audit%20over%20WhatsApp."
+                  href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'm%20a%20concreter%20and%20I'd%20like%20a%20quick%20free%20audit%20over%20WhatsApp."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300 font-extrabold text-sm transition-all"
                 >
                   <div className="flex items-center gap-2">
                     <MessageSquare className="w-5 h-5 text-emerald-600" />
-                    <span>Chat Direct on WhatsApp (+61 411 914 157)</span>
+                    <span>Chat Direct on WhatsApp (+61 401 164 987)</span>
                   </div>
                   <span>→</span>
                 </a>
@@ -763,7 +763,7 @@ export default function ConcretersSeoPage() {
                         <input
                           type="tel"
                           required
-                          placeholder="e.g. 0411 914 157"
+                          placeholder="e.g. 0401 164 987"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white"
