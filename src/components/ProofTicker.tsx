@@ -1,5 +1,5 @@
 import React from "react";
-import { PhoneIncoming, Brain, DollarSign, Eye, Award, CheckCircle } from "lucide-react";
+import { PhoneIncoming, Brain, Stethoscope, TrendingUp, Award, CheckCircle } from "lucide-react";
 
 export default function ProofTicker() {
   const metrics = [
@@ -14,27 +14,27 @@ export default function ProofTicker() {
     },
     {
       icon: Brain,
-      value: "#1 AI Overview",
-      label: "Ranked in Google AI & Gemini",
-      subtext: "Architectural Concrete Pimpama & Ormeau",
+      value: "#1 in Google AI",
+      label: "Top Citation in AI Overviews",
+      subtext: "Architectural Concrete & High-Value Slabs",
       color: "text-blue-600",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-100",
     },
     {
-      icon: DollarSign,
-      value: "$99,000+ USD",
-      label: "Verified Google Search Revenue",
-      subtext: "AdMob & AdSense Search Engines",
+      icon: Stethoscope,
+      value: "38+ Patients / Mo",
+      label: "High-LTV Treatment Consultations",
+      subtext: "Dental Implants & All-on-4 Practices",
       color: "text-emerald-600",
       bgColor: "bg-emerald-50",
       borderColor: "border-emerald-100",
     },
     {
-      icon: Eye,
-      value: "15M+ Views",
-      label: "Aggregate Search Impressions",
-      subtext: "Multi-Region Topical Clusters",
+      icon: TrendingUp,
+      value: "$0 Paid Ad Spend",
+      label: "100% Organic Inbound Traffic",
+      subtext: "Compounding Territory-Exclusive Assets",
       color: "text-amber-600",
       bgColor: "bg-amber-50",
       borderColor: "border-amber-100",
@@ -53,15 +53,15 @@ export default function ProofTicker() {
           <div>
             <div className="flex items-center gap-2 text-xs uppercase tracking-widest font-extrabold text-indigo-400">
               <Award className="w-4 h-4" />
-              Verified Performance Track Record
+              Verified Local SEO Performance Track Record
             </div>
             <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight pt-1">
-              Data-Backed Proof. Zero Guesswork. Real Inbound Revenue.
+              Data-Backed Proof. Zero Guesswork. Real Inbound Client Revenue.
             </h2>
           </div>
           <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400 bg-emerald-950/60 px-3 py-1.5 rounded-full border border-emerald-800/80">
             <CheckCircle className="w-4 h-4 text-emerald-400" />
-            Live Search Console & Call Logs Audited
+            Live Search Console & Inbound Call Records Audited
           </div>
         </div>
 
