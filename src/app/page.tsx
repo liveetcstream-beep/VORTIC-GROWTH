@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProofTicker from "@/components/ProofTicker";
+import IndustriesSection from "@/components/IndustriesSection";
 import CaseStudySection from "@/components/CaseStudySection";
 import SuburbDominationEngine from "@/components/SuburbDominationEngine";
 import RoiCalculator from "@/components/RoiCalculator";
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ProofTicker />
+      <IndustriesSection />
       <CaseStudySection />
       <SuburbDominationEngine />
       <RoiCalculator />
