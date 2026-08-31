@@ -41,15 +41,15 @@ export default function Footer() {
           {/* Col 2: Core Solutions */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="text-xs uppercase font-extrabold tracking-widest text-indigo-400">
-              Core Capabilities
+              Specialized Solutions
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400 font-medium">
-              <li><a href="/dental-seo" className="text-blue-400 font-bold hover:text-white transition-colors">🦷 Dental & Medical Practice SEO</a></li>
-              <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Suburb Micro-Silos</a></li>
+              <li><a href="/dental-seo" className="text-blue-400 font-bold hover:text-white transition-colors">🦷 Dental & Medical Clinics SEO</a></li>
+              <li><a href="/concreters-seo" className="text-indigo-400 font-bold hover:text-white transition-colors">🏗️ Concrete & Trade SEO</a></li>
+              <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Suburb Micro-Silos System</a></li>
               <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Google Maps 3-Pack Proximity</a></li>
               <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Google AI Overviews (GEO)</a></li>
-              <li><a href="/#case-study" className="hover:text-white transition-colors">Exclusive Asset Leasing</a></li>
-              <li><a href="/#calculator" className="hover:text-white transition-colors">Inbound Lead Funnel Routing</a></li>
+              <li><a href="/#calculator" className="hover:text-white transition-colors">Interactive ROI Calculator</a></li>
             </ul>
           </div>
 
