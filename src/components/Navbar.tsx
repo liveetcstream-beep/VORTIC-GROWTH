@@ -161,6 +161,10 @@ export default function Navbar() {
               )}
             </div>
 
+            <a href="/local-seo-gold-coast" className="hover:text-indigo-600 transition-colors font-extrabold text-indigo-700">
+              Gold Coast SEO
+            </a>
+
             <a href="/#case-study" className="hover:text-indigo-600 transition-colors">
               Case Studies
             </a>
@@ -171,6 +175,10 @@ export default function Navbar() {
 
             <a href="/#packages" className="hover:text-indigo-600 transition-colors">
               Pricing
+            </a>
+
+            <a href="/blog" className="hover:text-indigo-600 transition-colors font-semibold">
+              Insights
             </a>
 
           </nav>
@@ -253,6 +261,13 @@ export default function Navbar() {
 
           <div className="flex flex-col space-y-2.5 font-bold text-slate-800 text-sm pt-2">
             <a
+              href="/local-seo-gold-coast"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-1.5 text-indigo-700 font-extrabold hover:text-indigo-900"
+            >
+              Gold Coast SEO & Suburbs
+            </a>
+            <a
               href="/#case-study"
               onClick={() => setMobileMenuOpen(false)}
               className="py-1.5 hover:text-indigo-600"
@@ -272,6 +287,13 @@ export default function Navbar() {
               className="py-1.5 hover:text-indigo-600"
             >
               Pricing & Retainers
+            </a>
+            <a
+              href="/blog"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-1.5 hover:text-indigo-600 text-slate-600"
+            >
+              Insights & Knowledge Hub
             </a>
           </div>
 

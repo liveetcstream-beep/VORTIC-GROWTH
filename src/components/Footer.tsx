@@ -44,11 +44,11 @@ export default function Footer() {
               Specialized Solutions
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400 font-medium">
+              <li><a href="/local-seo-gold-coast" className="text-amber-400 font-bold hover:text-white transition-colors">📍 Gold Coast Local SEO</a></li>
               <li><a href="/dental-seo" className="text-blue-400 font-bold hover:text-white transition-colors">🦷 Dental & Medical Clinics SEO</a></li>
               <li><a href="/concreters-seo" className="text-indigo-400 font-bold hover:text-white transition-colors">🏗️ Concrete & Trade SEO</a></li>
+              <li><a href="/blog" className="text-purple-400 font-bold hover:text-white transition-colors">📚 Insights & Authority Hub</a></li>
               <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Suburb Micro-Silos System</a></li>
-              <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Google Maps 3-Pack Proximity</a></li>
-              <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Google AI Overviews (GEO)</a></li>
               <li><a href="/#calculator" className="hover:text-white transition-colors">Interactive ROI Calculator</a></li>
             </ul>
           </div>
