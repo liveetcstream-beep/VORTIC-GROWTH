@@ -12,12 +12,12 @@ import {
 
 export default function RoiCalculator() {
   const industries = [
-    { name: "Concrete & Driveways", defaultAvgJob: 8000, defaultLeads: 35 },
-    { name: "Roofing & Restorations", defaultAvgJob: 12000, defaultLeads: 25 },
-    { name: "HVAC & Air Conditioning", defaultAvgJob: 6500, defaultLeads: 30 },
-    { name: "Solar & Electrical", defaultAvgJob: 9000, defaultLeads: 25 },
-    { name: "Plumbing & Relining", defaultAvgJob: 4500, defaultLeads: 40 },
-    { name: "Commercial & Builders", defaultAvgJob: 35000, defaultLeads: 15 },
+    { name: "Dentists & Clinics", defaultAvgJob: 5500, defaultLeads: 35 },
+    { name: "Lawyers & Legal Firms", defaultAvgJob: 14000, defaultLeads: 20 },
+    { name: "Concrete & Driveways", defaultAvgJob: 8500, defaultLeads: 35 },
+    { name: "Custom Home Builders", defaultAvgJob: 45000, defaultLeads: 12 },
+    { name: "Roofing & Restorations", defaultAvgJob: 11500, defaultLeads: 25 },
+    { name: "Solar & HVAC Systems", defaultAvgJob: 8000, defaultLeads: 30 },
   ];
 
   const [selectedIndustry, setSelectedIndustry] = useState(industries[0]);

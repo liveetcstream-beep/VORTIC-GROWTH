@@ -171,13 +171,12 @@ export default function FreeAuditSection() {
                         onChange={(e) => setFormData({ ...formData, trade: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all text-slate-900 font-medium"
                       >
+                        <option>Dental & Medical Clinic</option>
+                        <option>Lawyer & Legal Practice</option>
                         <option>Concrete & Driveways</option>
-                        <option>Roofing & Restorations</option>
-                        <option>HVAC & Air Conditioning</option>
-                        <option>Solar & Electrical</option>
-                        <option>Plumbing & Drainage</option>
                         <option>Custom Home Builder</option>
-                        <option>Medical / Dental Clinic</option>
+                        <option>Roofing & Restorations</option>
+                        <option>Solar & HVAC Systems</option>
                         <option>Commercial B2B / Other</option>
                       </select>
                     </div>
