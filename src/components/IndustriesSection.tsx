@@ -17,7 +17,7 @@ export default function IndustriesSection() {
       subtitle: "Consistent Patient Acquisition",
       description:
         "Dominate local Google Maps searches for key treatments like Dental Implants, Invisalign, Cosmetic Veneers, Orthodontics, and General Care. Turn nearby local searchers into booked patients.",
-      avgValue: "$1,500 – $6,500+",
+      avgValue: "AUD $1,500 – $6,500+",
       keyQueries: ["dental implants gold coast", "invisalign dentist near me", "cosmetic dentistry [suburb]"],
       badge: "Healthcare & Dental",
       badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
@@ -29,7 +29,7 @@ export default function IndustriesSection() {
       subtitle: "Residential & Commercial Inquiries",
       description:
         "Rank across 15+ surrounding suburbs for quality home builds, architectural concrete driveways, house slabs, and site packages without competing on price.",
-      avgValue: "$3,500 – $15,000+",
+      avgValue: "AUD $3,500 – $15,000+",
       keyQueries: ["architectural concrete [suburb]", "commercial slabs near me", "driveway resurfacing"],
       badge: "Builders & Tradies",
       badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
@@ -41,7 +41,7 @@ export default function IndustriesSection() {
       subtitle: "Qualified Retainer Inquiries",
       description:
         "Capture local clients actively searching for personal injury attorneys, family law specialists, commercial conveyancing, and estate planners in your service region.",
-      avgValue: "$2,500 – $8,000+",
+      avgValue: "AUD $2,500 – $8,000+",
       keyQueries: ["personal injury lawyer [city]", "commercial conveyancing near me", "family law solicitor"],
       badge: "Legal & Professional",
       badgeColor: "bg-slate-100 text-slate-800 border-slate-200",
@@ -53,7 +53,7 @@ export default function IndustriesSection() {
       subtitle: "Local Residential Installations",
       description:
         "Outrank lead brokers and claim prime Google Maps 3-Pack spots for full roof restorations, solar installations, storm damage repairs, and guttering.",
-      avgValue: "$4,500 – $12,000+",
+      avgValue: "AUD $4,500 – $12,000+",
       keyQueries: ["roof restoration [suburb]", "solar installation near me", "emergency roof repair"],
       badge: "Energy & Roofing",
       badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
@@ -65,7 +65,7 @@ export default function IndustriesSection() {
       subtitle: "Ducted & Split System Installations",
       description:
         "Generate a continuous stream of ducted air conditioning installations and maintenance contracts before seasonal demand peaks.",
-      avgValue: "$3,500 – $9,000+",
+      avgValue: "AUD $3,500 – $9,000+",
       keyQueries: ["ducted air conditioning [city]", "air conditioning install near me", "split system [suburb]"],
       badge: "HVAC & Electrical",
       badgeColor: "bg-rose-50 text-rose-700 border-rose-200",
@@ -77,7 +77,7 @@ export default function IndustriesSection() {
       subtitle: "Specialized Pipe Relining & Drainage",
       description:
         "Position your business for substantial pipe relining projects, emergency commercial plumbing, and blocked drainage solutions across key suburbs.",
-      avgValue: "$2,500 – $8,500+",
+      avgValue: "AUD $2,500 – $8,500+",
       keyQueries: ["pipe relining [city]", "emergency plumber near me", "blocked drain specialist [suburb]"],
       badge: "Specialized Plumbing",
       badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",

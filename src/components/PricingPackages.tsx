@@ -6,8 +6,8 @@ export default function PricingPackages() {
     {
       name: "Foundation Sprint",
       tagline: "Core suburb Google Maps 3-Pack push for single-location businesses & tradies.",
-      price: "$490",
-      period: "per month",
+      price: "AUD $490",
+      period: "/ month",
       popular: false,
       features: [
         "Google Business Profile (GBP) 3-Pack Optimization",
@@ -24,8 +24,8 @@ export default function PricingPackages() {
     {
       name: "Market Dominator",
       tagline: "Full regional suburb cluster + Google AI Overview dominance.",
-      price: "$890",
-      period: "per month",
+      price: "AUD $890",
+      period: "/ month",
       popular: true,
       features: [
         "Everything in Foundation Sprint",
@@ -43,9 +43,9 @@ export default function PricingPackages() {
     {
       name: "Exclusive Asset Lease",
       tagline: "Turnkey live ranking lead asset (Rank & Rent) — immediate leads.",
-      price: "$450 – $650",
-      period: "per month",
-      trialNote: "30-Day Trial available at $290",
+      price: "AUD $450 – $650",
+      period: "/ month",
+      trialNote: "30-Day Trial available at AUD $290",
       popular: false,
       features: [
         "100% Exclusive ownership of all inbound phone calls & forms",
@@ -69,15 +69,15 @@ export default function PricingPackages() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-xs sm:text-sm font-bold text-indigo-900 shadow-sm">
             <ShieldCheck className="w-4 h-4 text-indigo-600" />
-            <span>Transparent Partnership Models</span>
+            <span>Transparent Partnership Models (AUD)</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
-            Accessible Pricing. <span className="gradient-text">Genuine ROI.</span>
+            Accessible Pricing. <span className="gradient-text">Genuine ROI in AUD.</span>
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-            Choose the model that fits your budget. Lower costs than traditional bloated agencies, no locked-in 12-month retainers, and strict 1-client territory exclusivity.
+            All prices in Australian Dollars (AUD). No hidden currency conversion fees, no locked-in 12-month retainers, and strict 1-client territory exclusivity.
           </p>
         </div>
 
@@ -118,8 +118,8 @@ export default function PricingPackages() {
 
                 {/* Price Display */}
                 <div className="pb-4 border-b border-slate-100">
-                  <div className="flex items-baseline gap-1.5">
-                    <span className="text-4xl sm:text-5xl font-black text-slate-950 tracking-tight">
+                  <div className="flex items-baseline gap-1.5 flex-wrap">
+                    <span className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
                       {pkg.price}
                     </span>
                     <span className="text-xs font-semibold text-slate-500">{pkg.period}</span>

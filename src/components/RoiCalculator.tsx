@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import {
   Calculator,
-  ArrowRight,
   Sparkles,
   CheckCircle2,
 } from "lucide-react";
@@ -27,7 +26,7 @@ export default function RoiCalculator() {
   const closedDeals = Math.round((leadsPerMonth * (closeRate / 100)) * 10) / 10;
   const monthlyRevenue = Math.round(closedDeals * avgJobValue);
   const annualRevenue = monthlyRevenue * 12;
-  const estimatedRetainer = 890; // realistic market dominator benchmark
+  const estimatedRetainer = 890; // realistic market dominator benchmark in AUD
   const roiMultiplier = Math.round((monthlyRevenue / estimatedRetainer) * 10) / 10;
 
   const handleIndustryChange = (ind: typeof industries[0]) => {
@@ -44,11 +43,11 @@ export default function RoiCalculator() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-xs sm:text-sm font-bold text-indigo-900 shadow-sm">
             <Calculator className="w-4 h-4 text-indigo-600" />
-            <span>Interactive ROI Estimator</span>
+            <span>Interactive ROI Estimator (AUD)</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
-            Calculate Your <span className="gradient-text">Inbound Revenue Potential</span>
+            Calculate Your <span className="gradient-text">Inbound Revenue Potential in AUD</span>
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
@@ -116,10 +115,10 @@ export default function RoiCalculator() {
             <div className="space-y-3 pt-4 border-t border-slate-100">
               <div className="flex items-center justify-between">
                 <label className="text-sm font-bold text-slate-900">
-                  3. Average Job / Treatment Value ($AUD / $USD):
+                  3. Average Job / Treatment Value (AUD $):
                 </label>
                 <span className="text-lg font-black text-emerald-700 bg-emerald-50 px-3 py-0.5 rounded-lg border border-emerald-100">
-                  ${avgJobValue.toLocaleString()}
+                  AUD ${avgJobValue.toLocaleString()}
                 </span>
               </div>
               <input
@@ -132,9 +131,9 @@ export default function RoiCalculator() {
                 className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600"
               />
               <div className="flex justify-between text-[11px] font-semibold text-slate-400">
-                <span>$500</span>
-                <span>$10,000</span>
-                <span>$25,000</span>
+                <span>AUD $500</span>
+                <span>AUD $10,000</span>
+                <span>AUD $25,000</span>
               </div>
             </div>
 
@@ -177,7 +176,7 @@ export default function RoiCalculator() {
               <div className="flex items-center justify-between pb-4 border-b border-slate-800">
                 <span className="text-xs uppercase font-extrabold tracking-widest text-indigo-400 flex items-center gap-1.5">
                   <Sparkles className="w-4 h-4 text-indigo-400" />
-                  Estimated Monthly Inflow
+                  Estimated Monthly Inflow (AUD)
                 </span>
                 <span className="text-[11px] font-bold bg-emerald-950 text-emerald-400 px-2.5 py-1 rounded-full border border-emerald-800">
                   Organic Traffic
@@ -190,7 +189,7 @@ export default function RoiCalculator() {
                   Projected Monthly Revenue:
                 </div>
                 <div className="text-4xl sm:text-5xl font-black text-white tracking-tight flex items-center gap-1 text-emerald-400">
-                  ${monthlyRevenue.toLocaleString()}
+                  AUD ${monthlyRevenue.toLocaleString()}
                   <span className="text-xs font-medium text-slate-400 tracking-normal">/ mo</span>
                 </div>
                 <p className="text-xs text-slate-400 font-medium">
@@ -204,7 +203,7 @@ export default function RoiCalculator() {
                   Projected Annual Inbound Volume:
                 </div>
                 <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                  ${annualRevenue.toLocaleString()}
+                  AUD ${annualRevenue.toLocaleString()}
                   <span className="text-xs font-medium text-slate-400 tracking-normal">/ yr</span>
                 </div>
               </div>
@@ -219,7 +218,7 @@ export default function RoiCalculator() {
                 </div>
                 <div className="text-right">
                   <div className="text-[11px] text-slate-400 font-medium">Monthly Investment:</div>
-                  <div className="text-xs font-bold text-emerald-400">$890/mo Retainer</div>
+                  <div className="text-xs font-bold text-emerald-400">AUD $890 / month</div>
                 </div>
               </div>
 
