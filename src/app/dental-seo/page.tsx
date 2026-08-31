@@ -48,7 +48,7 @@ export default function DentalSeoPage() {
   const acceptedPatients = Math.round((patientInquiries * (caseAcceptanceRate / 100)) * 10) / 10;
   const monthlyPipeline = Math.round(acceptedPatients * avgTreatmentValue);
   const annualPipeline = monthlyPipeline * 12;
-  const roiMultiplier = Math.round((monthlyPipeline / 990) * 10) / 10;
+  const roiMultiplier = Math.round((monthlyPipeline / 2000) * 10) / 10;
 
   // Form State
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -570,132 +570,215 @@ export default function DentalSeoPage() {
         </div>
       </section>
 
-      {/* Pricing for Dental Practices */}
+      {/* Pricing & Proposal Options for Dental Practices */}
       <section className="py-20 bg-white border-b border-slate-200/80" id="packages">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs sm:text-sm font-bold text-blue-900 shadow-sm">
               <Award className="w-4 h-4 text-blue-600" />
-              <span>Transparent Dental Retainers</span>
+              <span>Tailored Dental Growth Proposals</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
-              Predictable Pricing. <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Massive Patient Growth.</span>
+              Transparent Pricing. <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Market-Standard Value.</span>
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-              No locked-in contracts. 100% territory exclusivity per postal code.
+              Choose between our recommended full-service practice domination package or select modular services to fix specific bottlenecks.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            
-            {/* Plan 1: Single Suburb */}
-            <div className="card-clean rounded-3xl p-8 sm:p-9 flex flex-col justify-between space-y-6">
-              <div className="space-y-4">
-                <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">
-                  Single Location Practice
-                </span>
-                <h3 className="text-2xl font-black text-slate-900">
-                  Dental Foundation
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600">
-                  Perfect for local general practices looking to secure top 3 Google Maps rankings in their core suburb.
-                </p>
+          {/* OPTION B: FULL GROWTH PACKAGE (RECOMMENDED - FEATURED BANNER) */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <div className="rounded-3xl p-8 sm:p-11 bg-gradient-to-b from-blue-50/70 via-white to-white border-2 border-blue-600 shadow-2xl relative">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-extrabold text-xs shadow-md uppercase tracking-wider flex items-center gap-1.5">
+                <Sparkles className="w-4 h-4" />
+                OPTION B: FULL GROWTH PACKAGE (RECOMMENDED)
+              </div>
 
-                <div className="pb-4 border-b border-slate-100">
-                  <div className="flex items-baseline gap-1.5">
-                    <span className="text-4xl font-black text-slate-950">$590</span>
-                    <span className="text-xs font-semibold text-slate-500">AUD / month</span>
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-2">
+                
+                <div className="lg:col-span-7 space-y-4">
+                  <div className="inline-block text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-3 py-1 rounded-md">
+                    All-Inclusive Practice Growth
                   </div>
+                  <h3 className="text-2xl sm:text-3xl font-black text-slate-900">
+                    Comprehensive Dental Growth Engine
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    All services bundled together for maximum patient acquisition velocity, toxic backlink mitigation, Google AI Overview dominance, and multi-suburb expansion.
+                  </p>
+
+                  <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700 pt-2">
+                    <li className="flex items-start gap-2.5">
+                      <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                      <span><strong>Technical Fixes & Homepage Optimization:</strong> 301 redirects, speed, metadata</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                      <span><strong>On-Page SEO & Content Strategy:</strong> Schema markup, clinical blogs, treatment hubs</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                      <span><strong>Google Business Profile & Local 3-Pack:</strong> NAP consistency, review generation, citations</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                      <span><strong>Off-Page Authority & Spam Disavow:</strong> Fixes high spam score & builds quality dental backlinks</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                      <span><strong>Monthly Transparent Reporting:</strong> Direct search architect access with zero lock-in contract</span>
+                    </li>
+                  </ul>
                 </div>
 
-                <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Google Business Profile (GBP) 3-Pack Optimization</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Top 5 High-Intent Core Keyword Targeting (Emergency, Check-up)</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>AHPRA Compliant Medical & Dental Technical Schema</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Month-to-Month (No Lock-in Contracts)</span>
-                  </li>
-                </ul>
-              </div>
-
-              <a
-                href="#dental-audit"
-                className="w-full py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-sm text-center block transition-all"
-              >
-                Start Dental Foundation
-              </a>
-            </div>
-
-            {/* Plan 2: Multi-Suburb Flagship */}
-            <div className="rounded-3xl p-8 sm:p-9 flex flex-col justify-between space-y-6 bg-gradient-to-b from-blue-50/50 via-white to-white border-2 border-blue-600 shadow-2xl relative">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-extrabold text-xs shadow-md uppercase tracking-wider flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5" />
-                🔥 Most Popular for High Practice Growth
-              </div>
-
-              <div className="space-y-4">
-                <span className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-2.5 py-1 rounded-md">
-                  Regional Dominator
-                </span>
-                <h3 className="text-2xl font-black text-slate-900">
-                  Dental Market Dominator
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600">
-                  Engineered to capture key treatments like Dental Implants, Invisalign, and Veneers across 15+ surrounding postcodes.
-                </p>
-
-                <div className="pb-4 border-b border-slate-100">
-                  <div className="flex items-baseline gap-1.5">
-                    <span className="text-4xl font-black text-slate-950">$990</span>
-                    <span className="text-xs font-semibold text-slate-500">AUD / month</span>
+                <div className="lg:col-span-5 p-6 sm:p-7 rounded-2xl bg-slate-900 text-white flex flex-col justify-between space-y-6 shadow-xl">
+                  <div>
+                    <span className="text-xs uppercase font-extrabold tracking-wider text-blue-400">
+                      Monthly Investment
+                    </span>
+                    <div className="flex items-baseline gap-1.5 pt-1">
+                      <span className="text-4xl sm:text-5xl font-black text-white">AUD $2,000</span>
+                      <span className="text-xs text-slate-400">/ month</span>
+                    </div>
+                    <div className="text-xs text-slate-300 pt-1 font-medium">
+                      (after $900 one-off technical setup)
+                    </div>
                   </div>
+
+                  <div className="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700 text-xs text-slate-300 space-y-1">
+                    <div className="font-bold text-white flex items-center gap-1">
+                      <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                      Market Benchmark
+                    </div>
+                    <p className="text-[11px] leading-relaxed text-slate-400">
+                      Sits right in the middle of the <strong>$1,500–$2,500/mo</strong> Australian dental SEO average—well below the <strong>$2,500–$5,000/mo</strong> charged by large Gold Coast agencies for comparable scopes.
+                    </p>
+                  </div>
+
+                  <a
+                    href="#dental-audit"
+                    className="w-full py-4 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-extrabold text-sm text-center block shadow-lg shadow-blue-500/30 transition-all hover:translate-y-[-1px]"
+                  >
+                    Select Full Growth Package →
+                  </a>
                 </div>
 
-                <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span><strong>15+ Suburb Micro-Silos:</strong> Capturing affluent neighboring suburbs</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span><strong>Google AI & Gemini Overviews:</strong> Ranked as #1 recommended clinic</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span><strong>Core Treatment Focus:</strong> Implants, Invisalign, Restorations, Veneers</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span><strong>100% Territory Exclusivity:</strong> We lock your postal codes</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Instant WhatsApp Consultation & Call Tracking Integration</span>
-                  </li>
-                </ul>
               </div>
+            </div>
+          </div>
 
-              <a
-                href="#dental-audit"
-                className="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-extrabold text-sm text-center block shadow-lg shadow-blue-600/30 transition-all hover:translate-y-[-2px]"
-              >
-                Claim Regional Dental Exclusivity →
-              </a>
+          {/* OPTION A: MODULAR (PICK INDIVIDUAL SERVICES) */}
+          <div className="max-w-5xl mx-auto space-y-6">
+            <div className="text-center sm:text-left pb-2">
+              <div className="inline-block text-xs font-extrabold uppercase tracking-wider text-slate-700 bg-slate-100 px-3 py-1 rounded-md mb-2">
+                OPTION A: MODULAR
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900">
+                Pick Individual Modular Services
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-500">
+                Prefer to target specific areas first? Choose any individual module based on your current practice priorities.
+              </p>
             </div>
 
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              {/* Module 1 */}
+              <div className="card-clean rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 border border-slate-200 hover:border-blue-400 transition-all">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700">
+                      Phase 1: Setup
+                    </span>
+                    <span className="text-xl font-black text-slate-900">
+                      AUD $900 <span className="text-xs font-normal text-slate-500">One-Off</span>
+                    </span>
+                  </div>
+                  <h4 className="text-base font-black text-slate-900">
+                    Technical & Homepage Fixes
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Fixes all critical underlying technical issues: 301 redirect consolidation, broken link repair, meta descriptions, title tags, and phone number consistency.
+                  </p>
+                </div>
+                <div className="pt-3 border-t border-slate-100 text-xs font-semibold text-slate-500">
+                  ✓ One-off foundation repair
+                </div>
+              </div>
+
+              {/* Module 2 */}
+              <div className="card-clean rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 border border-slate-200 hover:border-blue-400 transition-all">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700">
+                      Phase 2: Monthly
+                    </span>
+                    <span className="text-xl font-black text-slate-900">
+                      AUD $650 <span className="text-xs font-normal text-slate-500">/ month</span>
+                    </span>
+                  </div>
+                  <h4 className="text-base font-black text-slate-900">
+                    On-Page SEO & Content Strategy
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Schema markup (LocalBusiness, DentalClinic, FAQ), expert-reviewed procedure content (Implants/Invisalign), image optimization, and clinical trust signals.
+                  </p>
+                </div>
+                <div className="pt-3 border-t border-slate-100 text-xs font-semibold text-slate-500">
+                  ✓ Ongoing treatment content expansion
+                </div>
+              </div>
+
+              {/* Module 3 */}
+              <div className="card-clean rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 border border-slate-200 hover:border-blue-400 transition-all">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700">
+                      Local 3-Pack
+                    </span>
+                    <span className="text-xl font-black text-slate-900">
+                      AUD $300 <span className="text-xs font-normal text-slate-500">/ month</span>
+                    </span>
+                  </div>
+                  <h4 className="text-base font-black text-slate-900">
+                    Google Business Profile & Local SEO
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Ongoing Google Maps ranking push, GBP profile optimization, NAP consistency, systematic review generation framework, and local directory citations.
+                  </p>
+                </div>
+                <div className="pt-3 border-t border-slate-100 text-xs font-semibold text-slate-500">
+                  ✓ Continuous Google Maps 3-Pack optimization
+                </div>
+              </div>
+
+              {/* Module 4 */}
+              <div className="card-clean rounded-2xl p-6 sm:p-7 flex flex-col justify-between space-y-4 border border-slate-200 hover:border-blue-400 transition-all">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-700">
+                      Authority & Cleanup
+                    </span>
+                    <span className="text-xl font-black text-slate-900">
+                      AUD $600 <span className="text-xs font-normal text-slate-500">/ month</span>
+                    </span>
+                  </div>
+                  <h4 className="text-base font-black text-slate-900">
+                    Off-Page SEO & Authority Building
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Sustainable growth foundation: Toxic backlink audit & disavow (fixes elevated 64% spam score), quality niche backlink acquisition, and medical citation management.
+                  </p>
+                </div>
+                <div className="pt-3 border-t border-slate-100 text-xs font-semibold text-slate-500">
+                  ✓ Protects domain authority & cleans spam links
+                </div>
+              </div>
+
+            </div>
           </div>
 
         </div>
