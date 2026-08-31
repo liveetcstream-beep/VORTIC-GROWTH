@@ -17,34 +17,46 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Vortic Growth | Local SEO, Google Maps & Inbound Lead Engine",
+  title: "Local SEO Gold Coast & Google Maps Agency | Vortic",
   description:
-    "Engineered Local Domination & Organic Revenue for High-Value Contractors, Builders & Service Enterprises. Verified 45+ leads/month, #1 Google AI Overview citations, zero ad spend.",
+    "Dominating Google Maps 3-Pack and local search for Gold Coast & Australian businesses. 40+ inbound monthly calls. Free audit.",
   keywords: [
-    "Local SEO Agency",
+    "Local SEO Gold Coast",
     "Google Maps 3-Pack Ranking",
-    "Gold Coast Local SEO",
-    "Trade Lead Generation",
+    "Gold Coast SEO Agency",
+    "Tradie SEO Gold Coast",
+    "Dental SEO Australia",
     "Generative Engine Optimization",
     "Rank and Rent Assets",
-    "Suburb SEO Domination",
   ],
-  authors: [{ name: "Vortic Growth Team", url: "https://vorticgrowth.com" }],
+  authors: [{ name: "Vortic Growth", url: "https://www.vorticgrowth.com" }],
   creator: "Vortic Growth",
-  metadataBase: new URL("https://vorticgrowth.com"),
+  metadataBase: new URL("https://www.vorticgrowth.com"),
+  alternates: {
+    canonical: "https://www.vorticgrowth.com",
+  },
   openGraph: {
-    title: "Vortic Growth | Engineered Local Domination & Organic Revenue",
+    title: "Local SEO Gold Coast & Google Maps Agency | Vortic",
     description:
-      "Transform your trade or service business with top Google Maps 3-Pack rankings and suburb-level organic lead funnels. Verified case studies inside.",
-    url: "https://vorticgrowth.com",
+      "Dominating Google Maps 3-Pack and local search for Gold Coast & Australian businesses. 40+ inbound monthly calls.",
+    url: "https://www.vorticgrowth.com",
     siteName: "Vortic Growth",
-    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vortic Growth - Local SEO & Search Engine Architecture Gold Coast",
+      },
+    ],
+    locale: "en_AU",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vortic Growth | Local SEO & Inbound Lead Engine",
-    description: "Dominating local search results and driving 40+ inbound quote calls monthly for contractors.",
+    title: "Local SEO Gold Coast & Google Maps Agency | Vortic",
+    description: "Dominating Google Maps 3-Pack and local search for Gold Coast businesses.",
+    images: ["/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",

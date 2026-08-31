@@ -47,9 +47,10 @@ export default function Footer() {
               <li><a href="/local-seo-gold-coast" className="text-amber-400 font-bold hover:text-white transition-colors">📍 Gold Coast Local SEO</a></li>
               <li><a href="/dental-seo" className="text-blue-400 font-bold hover:text-white transition-colors">🦷 Dental & Medical Clinics SEO</a></li>
               <li><a href="/concreters-seo" className="text-indigo-400 font-bold hover:text-white transition-colors">🏗️ Concrete & Trade SEO</a></li>
+              <li><a href="/builders-seo" className="text-emerald-400 font-bold hover:text-white transition-colors">🏠 Custom Builders & Renovators</a></li>
+              <li><a href="/case-studies" className="text-sky-400 font-bold hover:text-white transition-colors">📈 Verified Case Studies</a></li>
               <li><a href="/blog" className="text-purple-400 font-bold hover:text-white transition-colors">📚 Insights & Authority Hub</a></li>
-              <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Suburb Micro-Silos System</a></li>
-              <li><a href="/#calculator" className="hover:text-white transition-colors">Interactive ROI Calculator</a></li>
+              <li><a href="/contact" className="hover:text-white transition-colors">📞 Contact & Strategy Audit</a></li>
             </ul>
           </div>
 

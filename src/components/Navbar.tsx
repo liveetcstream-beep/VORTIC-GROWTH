@@ -162,18 +162,34 @@ export default function Navbar() {
                   </a>
 
                   <a
-                    href="/#industries"
+                    href="/builders-seo"
                     onClick={() => setDropdownOpen(false)}
-                    className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-slate-100 transition-colors group"
+                    className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-emerald-50/80 transition-colors group"
                   >
                     <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                       <Sun className="w-4 h-4" />
                     </div>
                     <div>
-                      <div className="font-extrabold text-slate-900 text-xs">
-                        Builders, Solar & HVAC
+                      <div className="font-extrabold text-slate-900 text-xs group-hover:text-emerald-700">
+                        Custom Builders & Renovators
                       </div>
-                      <div className="text-[11px] text-slate-500 font-normal">Installation & Service Funnels</div>
+                      <div className="text-[11px] text-slate-500 font-normal">Custom Homes & Major Construction Funnels</div>
+                    </div>
+                  </a>
+
+                  <a
+                    href="/#industries"
+                    onClick={() => setDropdownOpen(false)}
+                    className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-slate-100 transition-colors group"
+                  >
+                    <div className="w-8 h-8 rounded-lg bg-slate-100 text-slate-800 flex items-center justify-center shrink-0 group-hover:bg-slate-900 group-hover:text-white transition-colors">
+                      <Scale className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="font-extrabold text-slate-900 text-xs">
+                        Law & Professional Firms
+                      </div>
+                      <div className="text-[11px] text-slate-500 font-normal">High-Retainer Case Acquisition</div>
                     </div>
                   </a>
 
@@ -181,7 +197,7 @@ export default function Navbar() {
               )}
             </div>
 
-            <a href="/#case-study" className="hover:text-indigo-600 transition-colors">
+            <a href="/case-studies" className="hover:text-indigo-600 transition-colors">
               Case Studies
             </a>
 
@@ -195,6 +211,10 @@ export default function Navbar() {
 
             <a href="/blog" className="hover:text-indigo-600 transition-colors">
               Insights
+            </a>
+
+            <a href="/contact" className="hover:text-indigo-600 transition-colors">
+              Contact
             </a>
 
           </nav>

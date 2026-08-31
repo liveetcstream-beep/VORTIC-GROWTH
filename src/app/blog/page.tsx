@@ -1,8 +1,35 @@
 import React from "react";
 import Link from "next/link";
+import { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Sparkles, ArrowRight, BookOpen, Clock, Calendar, UserCheck } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Local SEO Insights & AI Search Guide | Vortic Growth",
+  description:
+    "Actionable Local SEO, Google AI Overviews, and Google Maps strategies for Australian businesses and trade contractors.",
+  alternates: {
+    canonical: "https://www.vorticgrowth.com/blog",
+  },
+  openGraph: {
+    title: "Local SEO Insights & AI Search Guide | Vortic Growth",
+    description:
+      "Actionable Local SEO, Google AI Overviews, and Google Maps strategies for Australian businesses and trade contractors.",
+    url: "https://www.vorticgrowth.com/blog",
+    siteName: "Vortic Growth",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Vortic Growth Blog" }],
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Local SEO Insights & AI Search Guide | Vortic Growth",
+    description:
+      "Actionable Local SEO, Google AI Overviews, and Google Maps strategies for Australian businesses.",
+    images: ["/og-image.jpg"],
+  },
+};
 
 export default function BlogIndexPage() {
   const articles = [
