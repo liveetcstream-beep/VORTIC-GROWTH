@@ -88,7 +88,7 @@ export default function RoiCalculator() {
             {/* Step 2: Slider - Inbound Leads / Month */}
             <div className="space-y-3 pt-4 border-t border-slate-100">
               <div className="flex items-center justify-between">
-                <label className="text-sm font-bold text-slate-900">
+                <label htmlFor="leads-per-month-slider" className="text-sm font-bold text-slate-900">
                   2. Targeted Inbound Quote Calls & Forms / Month:
                 </label>
                 <span className="text-lg font-black text-indigo-600 bg-indigo-50 px-3 py-0.5 rounded-lg border border-indigo-100">
@@ -96,6 +96,8 @@ export default function RoiCalculator() {
                 </span>
               </div>
               <input
+                id="leads-per-month-slider"
+                aria-label="Targeted Inbound Quote Calls & Forms Per Month"
                 type="range"
                 min="5"
                 max="50"
@@ -104,7 +106,7 @@ export default function RoiCalculator() {
                 onChange={(e) => setLeadsPerMonth(Number(e.target.value))}
                 className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
               />
-              <div className="flex justify-between text-[11px] font-semibold text-slate-400">
+              <div className="flex justify-between text-[11px] font-semibold text-slate-600">
                 <span>5 Leads (Starter)</span>
                 <span>25 Leads (Average)</span>
                 <span>50 Leads (Dominator)</span>
@@ -114,7 +116,7 @@ export default function RoiCalculator() {
             {/* Step 3: Slider - Average Job Value */}
             <div className="space-y-3 pt-4 border-t border-slate-100">
               <div className="flex items-center justify-between">
-                <label className="text-sm font-bold text-slate-900">
+                <label htmlFor="avg-job-value-slider" className="text-sm font-bold text-slate-900">
                   3. Average Job / Treatment Value (AUD $):
                 </label>
                 <span className="text-lg font-black text-emerald-700 bg-emerald-50 px-3 py-0.5 rounded-lg border border-emerald-100">
@@ -122,6 +124,8 @@ export default function RoiCalculator() {
                 </span>
               </div>
               <input
+                id="avg-job-value-slider"
+                aria-label="Average Job or Treatment Value in AUD"
                 type="range"
                 min="500"
                 max="25000"
@@ -130,7 +134,7 @@ export default function RoiCalculator() {
                 onChange={(e) => setAvgJobValue(Number(e.target.value))}
                 className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600"
               />
-              <div className="flex justify-between text-[11px] font-semibold text-slate-400">
+              <div className="flex justify-between text-[11px] font-semibold text-slate-600">
                 <span>AUD $500</span>
                 <span>AUD $10,000</span>
                 <span>AUD $25,000</span>
@@ -140,7 +144,7 @@ export default function RoiCalculator() {
             {/* Step 4: Slider - Conversion / Close Rate */}
             <div className="space-y-3 pt-4 border-t border-slate-100">
               <div className="flex items-center justify-between">
-                <label className="text-sm font-bold text-slate-900">
+                <label htmlFor="close-rate-slider" className="text-sm font-bold text-slate-900">
                   4. Your Average Close Rate (%):
                 </label>
                 <span className="text-base font-black text-slate-800 bg-slate-100 px-3 py-0.5 rounded-lg border border-slate-200">
@@ -148,6 +152,8 @@ export default function RoiCalculator() {
                 </span>
               </div>
               <input
+                id="close-rate-slider"
+                aria-label="Your Average Close Rate Percentage"
                 type="range"
                 min="15"
                 max="60"
@@ -156,7 +162,7 @@ export default function RoiCalculator() {
                 onChange={(e) => setCloseRate(Number(e.target.value))}
                 className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-slate-800"
               />
-              <div className="flex justify-between text-[11px] font-semibold text-slate-400">
+              <div className="flex justify-between text-[11px] font-semibold text-slate-600">
                 <span>15% (Conservative)</span>
                 <span>30% (Standard)</span>
                 <span>60% (High Performer)</span>

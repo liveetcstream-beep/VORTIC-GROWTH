@@ -106,7 +106,7 @@ export default function SuburbDominationEngine() {
                     <span className="text-xs font-bold uppercase tracking-wider text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200/80">
                       {p.badge}
                     </span>
-                    <span className="text-2xl font-black text-slate-200 group-hover:text-indigo-200 transition-colors">
+                    <span className="text-2xl font-black text-slate-500 group-hover:text-indigo-600 transition-colors">
                       {p.step}
                     </span>
                   </div>

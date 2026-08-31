@@ -120,8 +120,8 @@ export default function CaseStudySection() {
                   <div className="text-[11px] font-semibold text-slate-500">Google AI Overview</div>
                 </div>
                 <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-center">
-                  <div className="text-lg font-black text-emerald-600">0 Ad Spend</div>
-                  <div className="text-[11px] font-semibold text-slate-500">100% Organic Leads</div>
+                  <div className="text-lg font-black text-emerald-700">0 Ad Spend</div>
+                  <div className="text-[11px] font-bold text-slate-600">100% Organic Leads</div>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function CaseStudySection() {
                 <Sparkles className="w-4 h-4 text-blue-600" />
                 Specialized Dental Patient Funnel
               </div>
-              <p className="text-blue-800">
+              <p className="text-blue-900 font-medium">
                 Targeted schema markup for DentalClinic entity, verified AHPRA compliance, and automated WhatsApp/Call consultation scheduling.
               </p>
             </div>
@@ -221,10 +221,10 @@ export default function CaseStudySection() {
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs sm:text-sm">
               <thead>
-                <tr className="border-b border-slate-200 text-slate-400 font-bold uppercase text-[11px] tracking-wider">
-                  <th className="pb-3 pr-4">Search Query</th>
-                  <th className="pb-3 px-4">Google SERP Status</th>
-                  <th className="pb-3 pl-4">Target Intent / Case Value</th>
+                <tr className="border-b border-slate-200 text-slate-700 font-bold uppercase text-[11px] tracking-wider">
+                  <th className="pb-3 pr-4 text-slate-800">Search Query</th>
+                  <th className="pb-3 px-4 text-slate-800">Google SERP Status</th>
+                  <th className="pb-3 pl-4 text-slate-800">Target Intent / Case Value</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 font-medium text-slate-700">

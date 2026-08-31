@@ -57,8 +57,8 @@ export default function FreeAuditSection() {
                   1
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm">Suburb-by-Suburb Proximity Scan</h4>
-                  <p className="text-xs text-slate-500">See exactly where your Google Maps ranking drops off in surrounding postal codes.</p>
+                  <h3 className="font-bold text-slate-900 text-sm">Suburb-by-Suburb Proximity Scan</h3>
+                  <p className="text-xs text-slate-600">See exactly where your Google Maps ranking drops off in surrounding postal codes.</p>
                 </div>
               </div>
 
@@ -67,8 +67,8 @@ export default function FreeAuditSection() {
                   2
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm">Competitor Inbound Leakage Audit</h4>
-                  <p className="text-xs text-slate-500">Identify which local competitors are taking your high-margin jobs and why.</p>
+                  <h3 className="font-bold text-slate-900 text-sm">Competitor Inbound Leakage Audit</h3>
+                  <p className="text-xs text-slate-600">Identify which local competitors are taking your high-margin jobs and why.</p>
                 </div>
               </div>
 
@@ -77,23 +77,23 @@ export default function FreeAuditSection() {
                   3
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm">Google AI & GEO Readiness Check</h4>
-                  <p className="text-xs text-slate-500">Verify whether Gemini and Google AI Overviews cite your business or your rivals.</p>
+                  <h3 className="font-bold text-slate-900 text-sm">Google AI & GEO Readiness Check</h3>
+                  <p className="text-xs text-slate-600">Verify whether Gemini and Google AI Overviews cite your business or your rivals.</p>
                 </div>
               </div>
             </div>
 
             {/* Direct WhatsApp Callout */}
             <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2.5">
-              <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Need Answers Right Now?</div>
+              <div className="text-xs font-bold text-slate-600 uppercase tracking-wider">Need Answers Right Now?</div>
               <a
                 href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'm%20a%20business%20owner%20and%20I'd%20like%20a%20quick%20free%20audit%20review%20over%20WhatsApp."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300 font-extrabold text-sm transition-all"
+                className="flex items-center justify-between p-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-950 border border-emerald-300 font-extrabold text-sm transition-all"
               >
                 <div className="flex items-center gap-2">
-                  <MessageSquare className="w-5 h-5 text-emerald-600" />
+                  <MessageSquare className="w-5 h-5 text-emerald-700" />
                   <span>Chat Direct on WhatsApp (+61 401 164 987)</span>
                 </div>
                 <span>→</span>
@@ -138,7 +138,7 @@ export default function FreeAuditSection() {
                       <h3 className="text-xl font-extrabold text-slate-900">
                         Request Your Growth Audit
                       </h3>
-                      <p className="text-xs text-slate-500 font-medium">Takes 60 seconds • Delivered to your inbox & WhatsApp</p>
+                      <p className="text-xs text-slate-600 font-medium">Takes 60 seconds • Delivered to your inbox & WhatsApp</p>
                     </div>
                     <span className="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-md border border-indigo-100">
                       Step 1 of 1
@@ -148,10 +148,11 @@ export default function FreeAuditSection() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {/* Business Name */}
                     <div className="space-y-1.5">
-                      <label className="text-xs font-bold text-slate-800">
+                      <label htmlFor="businessNameInput" className="text-xs font-bold text-slate-800">
                         Business / Company Name <span className="text-rose-500">*</span>
                       </label>
                       <input
+                        id="businessNameInput"
                         type="text"
                         required
                         placeholder="e.g. Gold Coast Slabs & Driveways"
@@ -163,10 +164,12 @@ export default function FreeAuditSection() {
 
                     {/* Trade / Industry */}
                     <div className="space-y-1.5">
-                      <label className="text-xs font-bold text-slate-800">
+                      <label htmlFor="tradeCategorySelect" className="text-xs font-bold text-slate-800">
                         Primary Trade / Category <span className="text-rose-500">*</span>
                       </label>
                       <select
+                        id="tradeCategorySelect"
+                        aria-label="Select Primary Trade or Category"
                         value={formData.trade}
                         onChange={(e) => setFormData({ ...formData, trade: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all text-slate-900 font-medium"
@@ -185,10 +188,11 @@ export default function FreeAuditSection() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {/* Suburb / City */}
                     <div className="space-y-1.5">
-                      <label className="text-xs font-bold text-slate-800">
+                      <label htmlFor="suburbInput" className="text-xs font-bold text-slate-800">
                         Target Suburb / City Region <span className="text-rose-500">*</span>
                       </label>
                       <input
+                        id="suburbInput"
                         type="text"
                         required
                         placeholder="e.g. Gold Coast QLD (Robina, Coomera)"
@@ -200,10 +204,11 @@ export default function FreeAuditSection() {
 
                     {/* Current Website URL */}
                     <div className="space-y-1.5">
-                      <label className="text-xs font-bold text-slate-800">
-                        Current Website URL <span className="text-slate-400 font-normal">(Optional)</span>
+                      <label htmlFor="websiteInput" className="text-xs font-bold text-slate-800">
+                        Current Website URL <span className="text-slate-600 font-medium">(Optional)</span>
                       </label>
                       <input
+                        id="websiteInput"
                         type="text"
                         placeholder="e.g. https://mybusiness.com.au"
                         value={formData.website}

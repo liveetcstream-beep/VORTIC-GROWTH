@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { MessageSquare, Phone, Mail, MapPin, ShieldCheck, ArrowUp } from "lucide-react";
 
 export default function Footer() {
@@ -20,10 +21,11 @@ export default function Footer() {
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/vorticgrowth-logo.png"
-                alt="Vortic Growth Logo"
+              <Image
+                src="/vorticgrowth-logo.webp"
+                alt="Vortic Growth - Local SEO Agency Logo"
+                width={180}
+                height={48}
                 className="h-10 sm:h-12 w-auto object-contain bg-white/10 p-1.5 rounded-xl border border-slate-700"
               />
             </div>

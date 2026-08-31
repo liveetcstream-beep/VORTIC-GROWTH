@@ -97,7 +97,7 @@ export default function HowItWorksSection() {
                 <div className="space-y-4">
                   {/* Step Number & Badge */}
                   <div className="flex items-center justify-between">
-                    <span className="text-2xl font-black text-slate-300 group-hover:text-indigo-600 transition-colors">
+                    <span className="text-2xl font-black text-slate-500 group-hover:text-indigo-600 transition-colors">
                       {step.number}
                     </span>
                     <span className={`text-[11px] font-extrabold px-2.5 py-1 rounded-full border ${step.badgeColor}`}>
@@ -114,7 +114,7 @@ export default function HowItWorksSection() {
                     <h3 className="text-lg font-black text-slate-900 tracking-tight leading-snug">
                       {step.title}
                     </h3>
-                    <div className="text-xs font-bold text-slate-400 pt-0.5">
+                    <div className="text-xs font-bold text-slate-600 pt-0.5">
                       Timeline: {step.timeline}
                     </div>
                   </div>

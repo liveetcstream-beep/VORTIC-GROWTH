@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 import {
   MessageSquare,
   ArrowRight,
@@ -64,12 +65,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           
-          {/* Brand Logo - Made Larger */}
-          <a href="/" className="flex items-center gap-3 group py-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/vorticgrowth-logo.png"
-              alt="Vortic Growth"
+          {/* Brand Logo - Next.js Optimized Image with explicit width/height */}
+          <a href="/" className="flex items-center gap-3 group py-2" aria-label="Vortic Growth Home">
+            <Image
+              src="/vorticgrowth-logo.webp"
+              alt="Vortic Growth - Local SEO & Google Maps Agency"
+              width={220}
+              height={60}
+              priority
               className="h-14 sm:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
             />
           </a>

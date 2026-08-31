@@ -105,8 +105,8 @@ export default function TestimonialsSection() {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-1 text-[11px] text-slate-400 font-medium">
-                    <MapPin className="w-3 h-3 text-slate-400 shrink-0" />
+                  <div className="flex items-center gap-1 text-[11px] text-slate-600 font-semibold">
+                    <MapPin className="w-3.5 h-3.5 text-indigo-600 shrink-0" />
                     <span>{t.location}</span>
                   </div>
 
