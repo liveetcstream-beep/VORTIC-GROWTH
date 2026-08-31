@@ -71,6 +71,9 @@ export default function RootLayout({
               "name": "Vortic Growth",
               "image": "https://vorticgrowth.com/og-image.jpg",
               "url": "https://vorticgrowth.com",
+              "sameAs": [
+                "https://www.facebook.com/vorticgrowth/"
+              ],
               "telephone": "+61401164987",
               "priceRange": "$$$",
               "description": "Results-driven Local SEO, Google Maps 3-Pack optimization, and suburb-level organic lead generation for trade and clinical practices.",
