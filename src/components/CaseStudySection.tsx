@@ -21,7 +21,7 @@ export default function CaseStudySection() {
       ranking: "#1 Source in Google AI Overview",
       isAi: true,
       badge: "Google AI #1",
-      intent: "High-Ticket Dental ($5k-$25k)",
+      intent: "Dental Implants & Restorative ($2.5k-$6k)",
     },
     {
       query: "invisalign provider ormeau",

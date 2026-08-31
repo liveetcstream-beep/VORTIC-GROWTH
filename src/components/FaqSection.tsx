@@ -16,7 +16,7 @@ export default function FaqSection() {
     {
       question: "What is Generative Engine Optimization (GEO) and why does Google AI matter in 2025/2026?",
       answer:
-        "Google AI Overviews (powered by Gemini) now synthesize top search results at the very top of page 1, before traditional organic listings appear. If your website lacks structured entity citations and clinical/trade EEAT signals, you are invisible to AI searchers. We format your content and schema markup specifically so Google's AI models cite your practice or business as the #1 verified source for complex, high-ticket queries.",
+        "Google AI Overviews (powered by Gemini) now synthesize top search results at the very top of page 1, before traditional organic listings appear. If your website lacks structured entity citations and clinical/trade EEAT signals, you are invisible to AI searchers. We format your content and schema markup specifically so Google's AI models cite your practice or business as the #1 verified source for relevant search queries.",
       category: "AI & Innovation",
     },
     {

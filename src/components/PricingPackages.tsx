@@ -1,12 +1,12 @@
 import React from "react";
-import { Check, Sparkles, ArrowRight, ShieldCheck, Zap } from "lucide-react";
+import { Check, Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
 
 export default function PricingPackages() {
   const packages = [
     {
       name: "Foundation Sprint",
-      tagline: "Core suburb Google Maps 3-Pack push for single-location contractors.",
-      price: "$850",
+      tagline: "Core suburb Google Maps 3-Pack push for single-location businesses & tradies.",
+      price: "$490",
       period: "per month",
       popular: false,
       features: [
@@ -14,7 +14,7 @@ export default function PricingPackages() {
         "Top 5 High-Intent Core Keyword Targeting",
         "Local Australian Citations (YellowPages, TrueLocal)",
         "On-Page Technical & Schema Implementation",
-        "Monthly Ranking & Call Tracking Report",
+        "Monthly Ranking & Inbound Call Tracking Report",
         "Month-to-Month (No Lock-In Contracts)",
       ],
       ctaText: "Start Foundation Sprint",
@@ -24,7 +24,7 @@ export default function PricingPackages() {
     {
       name: "Market Dominator",
       tagline: "Full regional suburb cluster + Google AI Overview dominance.",
-      price: "$1,450",
+      price: "$890",
       period: "per month",
       popular: true,
       features: [
@@ -32,28 +32,28 @@ export default function PricingPackages() {
         "15+ Dedicated Suburb-Level Micro-Silos (Every Postal Code)",
         "Google AI Overviews & Gemini Generative Optimization",
         "GMB Proximity Radius Expansion (Surrounding Suburbs)",
-        "Instant WhatsApp Lead Widget & Call Routing Setup",
-        "100% Geographic Suburb Exclusivity",
-        "Priority Support & Weekly Lead Pipeline Review",
+        "Instant WhatsApp Lead Widget & Direct Call Routing",
+        "100% Geographic Suburb Exclusivity Guarantee",
+        "Priority Support & Bi-Weekly Review",
       ],
       ctaText: "Claim Regional Domination",
       ctaLink: "#audit-form",
-      badge: "🔥 Most Popular for High ROI",
+      badge: "🔥 Best Value & Most Popular",
     },
     {
       name: "Exclusive Asset Lease",
       tagline: "Turnkey live ranking lead asset (Rank & Rent) — immediate leads.",
-      price: "$750 – $1,000",
+      price: "$450 – $650",
       period: "per month",
-      trialNote: "30-Day Risk-Free Trial available at $500",
+      trialNote: "30-Day Trial available at $290",
       popular: false,
       features: [
         "100% Exclusive ownership of all inbound phone calls & forms",
         "Live Page 1 & Google AI Overview ranked platform",
-        "10-Minute technical setup (Call number forwarded to your mobile)",
+        "10-Minute technical setup (Call number forwarded to your phone)",
         "Zero setup fees, zero ad spend, zero waiting for rankings",
-        "Your QBCC / trade license integrated into EEAT badges",
-        "First job won pays for entire year of lease",
+        "Your business details & license integrated into EEAT badges",
+        "First job won covers multiple months of lease",
       ],
       ctaText: "Inquire Asset Availability",
       ctaLink: "https://wa.me/61401164987?text=Hi%20Bilal,%20I'd%20like%20to%20check%20Exclusive%20Asset%20Lease%20availability%20for%20my%20trade.",
@@ -73,11 +73,11 @@ export default function PricingPackages() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
-            Predictable Pricing. <span className="gradient-text">Massive ROI.</span>
+            Accessible Pricing. <span className="gradient-text">Genuine ROI.</span>
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-            Choose the model that fits your growth stage. No hidden fees, no locked-in 12-month retainers, and strict 1-contractor exclusivity per territory.
+            Choose the model that fits your budget. Lower costs than traditional bloated agencies, no locked-in 12-month retainers, and strict 1-client territory exclusivity.
           </p>
         </div>
 

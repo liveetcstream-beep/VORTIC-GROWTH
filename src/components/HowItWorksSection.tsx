@@ -9,11 +9,11 @@ export default function HowItWorksSection() {
       title: "Hyper-Local Suburb & Competitor Audit",
       timeline: "Day 1 to Day 3",
       description:
-        "We scan your primary and surrounding postcodes using multi-point geo-grid scrapers. We uncover exactly where high-intent search volume for lucrative procedures ($5k+ Implants) and high-ticket trade jobs ($40k+ Commercial Slabs) is leaking to your competitors.",
+        "We scan your primary and surrounding postcodes using multi-point geo-grid scrapers. We uncover exactly where local search volume for key procedures ($2.5k+ Implants) and core trade contracts ($5k+ Slabs) is leaking to your competitors.",
       deliverables: [
         "Google Maps 3-Pack Proximity Radius Scan",
         "Competitor Suburb Topical Cluster Audit",
-        "High-Ticket Keyword Revenue Gap Map",
+        "Target Keyword Revenue Gap Map",
       ],
       badge: "Discovery & Intelligence",
       badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
@@ -81,7 +81,7 @@ export default function HowItWorksSection() {
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-            A battle-tested 4-step framework engineered specifically for practices and high-ticket service businesses in Australia.
+            A battle-tested 4-step framework engineered specifically for practices and local service businesses in Australia.
           </p>
         </div>
 

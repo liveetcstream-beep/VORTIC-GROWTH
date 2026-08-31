@@ -7,8 +7,6 @@ import {
   Flame,
   Wrench,
   Sparkles,
-  ArrowRight,
-  TrendingUp,
 } from "lucide-react";
 
 export default function IndustriesSection() {
@@ -16,10 +14,10 @@ export default function IndustriesSection() {
     {
       icon: Stethoscope,
       title: "Dental & Medical Clinics",
-      subtitle: "High-LTV Patient Acquisition",
+      subtitle: "Consistent Patient Acquisition",
       description:
-        "Dominate local Google Maps searches for high-margin procedures like Dental Implants, Invisalign, Cosmetic Veneers, Orthodontics, and Specialized Surgery. Turn nearby searchers into high-value booked patients.",
-      avgValue: "$3,500 – $25,000+",
+        "Dominate local Google Maps searches for key treatments like Dental Implants, Invisalign, Cosmetic Veneers, Orthodontics, and General Care. Turn nearby local searchers into booked patients.",
+      avgValue: "$1,500 – $6,500+",
       keyQueries: ["dental implants gold coast", "invisalign dentist near me", "cosmetic dentistry [suburb]"],
       badge: "Healthcare & Dental",
       badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
@@ -27,11 +25,11 @@ export default function IndustriesSection() {
     },
     {
       icon: Hammer,
-      title: "Custom Builders & Concreting",
-      subtitle: "Commercial & Residential Contracts",
+      title: "Builders & Concreting",
+      subtitle: "Residential & Commercial Inquiries",
       description:
-        "Rank across 20+ surrounding suburbs for high-ticket new home builds, architectural concrete driveways, house slabs, and large-scale commercial site packages.",
-      avgValue: "$8,000 – $60,000+",
+        "Rank across 15+ surrounding suburbs for quality home builds, architectural concrete driveways, house slabs, and site packages without competing on price.",
+      avgValue: "$3,500 – $15,000+",
       keyQueries: ["architectural concrete [suburb]", "commercial slabs near me", "driveway resurfacing"],
       badge: "Builders & Tradies",
       badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
@@ -40,10 +38,10 @@ export default function IndustriesSection() {
     {
       icon: Scale,
       title: "Legal & Professional Firms",
-      subtitle: "High-Intent Retainer Inquiries",
+      subtitle: "Qualified Retainer Inquiries",
       description:
-        "Capture local clients actively searching for personal injury attorneys, family law specialists, commercial conveyancing, and estate planners in high-income postal codes.",
-      avgValue: "$5,000 – $50,000+",
+        "Capture local clients actively searching for personal injury attorneys, family law specialists, commercial conveyancing, and estate planners in your service region.",
+      avgValue: "$2,500 – $8,000+",
       keyQueries: ["personal injury lawyer [city]", "commercial conveyancing near me", "family law solicitor"],
       badge: "Legal & Professional",
       badgeColor: "bg-slate-100 text-slate-800 border-slate-200",
@@ -52,11 +50,11 @@ export default function IndustriesSection() {
     {
       icon: Sun,
       title: "Roofing, Solar & Restorations",
-      subtitle: "High-Margin Residential Installs",
+      subtitle: "Local Residential Installations",
       description:
-        "Outrank lead brokers and claim prime Google Maps 3-Pack spots for full roof replacements, commercial solar installations, storm damage restorations, and guttering.",
-      avgValue: "$9,000 – $30,000+",
-      keyQueries: ["roof restoration [suburb]", "commercial solar install", "emergency roof repair"],
+        "Outrank lead brokers and claim prime Google Maps 3-Pack spots for full roof restorations, solar installations, storm damage repairs, and guttering.",
+      avgValue: "$4,500 – $12,000+",
+      keyQueries: ["roof restoration [suburb]", "solar installation near me", "emergency roof repair"],
       badge: "Energy & Roofing",
       badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
       accent: "from-amber-600 to-orange-600",
@@ -66,9 +64,9 @@ export default function IndustriesSection() {
       title: "HVAC & Climate Systems",
       subtitle: "Ducted & Split System Installations",
       description:
-        "Generate a continuous stream of ducted air conditioning installations and commercial maintenance contracts before peak seasonal demand strikes.",
-      avgValue: "$6,000 – $18,000+",
-      keyQueries: ["ducted air conditioning [city]", "commercial hvac installation", "split system install [suburb]"],
+        "Generate a continuous stream of ducted air conditioning installations and maintenance contracts before seasonal demand peaks.",
+      avgValue: "$3,500 – $9,000+",
+      keyQueries: ["ducted air conditioning [city]", "air conditioning install near me", "split system [suburb]"],
       badge: "HVAC & Electrical",
       badgeColor: "bg-rose-50 text-rose-700 border-rose-200",
       accent: "from-rose-600 to-pink-600",
@@ -76,11 +74,11 @@ export default function IndustriesSection() {
     {
       icon: Wrench,
       title: "Plumbing & Relining",
-      subtitle: "High-Ticket Trenchless Pipe Relining",
+      subtitle: "Specialized Pipe Relining & Drainage",
       description:
-        "Move past low-margin tap washers. We position your firm for high-ticket trenchless drain relining, commercial plumbing, and blocked sewer infrastructure jobs.",
-      avgValue: "$4,500 – $20,000+",
-      keyQueries: ["pipe relining [city]", "emergency commercial plumber", "blocked drain specialist [suburb]"],
+        "Position your business for substantial pipe relining projects, emergency commercial plumbing, and blocked drainage solutions across key suburbs.",
+      avgValue: "$2,500 – $8,500+",
+      keyQueries: ["pipe relining [city]", "emergency plumber near me", "blocked drain specialist [suburb]"],
       badge: "Specialized Plumbing",
       badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
       accent: "from-emerald-600 to-teal-600",
@@ -99,11 +97,11 @@ export default function IndustriesSection() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
-            High-Ticket Sectors We <span className="gradient-text">Engineered to Dominate</span>
+            Key Sectors We <span className="gradient-text">Engineered to Dominate</span>
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-            Our Suburb Domination framework is tailor-made for local practices and high-value service businesses where winning 3 to 5 extra jobs per month generates tens of thousands in new revenue.
+            Our Suburb Domination framework is tailor-made for local practices and trade businesses where winning 3 to 5 extra quality jobs per month significantly increases net profit.
           </p>
         </div>
 
@@ -146,7 +144,7 @@ export default function IndustriesSection() {
                 {/* Bottom Metric & Queries Box */}
                 <div className="pt-4 border-t border-slate-100 space-y-3">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="font-semibold text-slate-500">Average Case / Job Value:</span>
+                    <span className="font-semibold text-slate-500">Average Job / Case Value:</span>
                     <span className="font-extrabold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                       {ind.avgValue}
                     </span>

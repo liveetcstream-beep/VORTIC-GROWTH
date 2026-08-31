@@ -560,7 +560,7 @@ export default function ConcretersSeoPage() {
                 </span>
                 <h3 className="text-2xl font-black text-slate-900">Foundation Sprint</h3>
                 <div className="pb-4 border-b border-slate-100">
-                  <span className="text-4xl font-black text-slate-950">$850</span>
+                  <span className="text-4xl font-black text-slate-950">$490</span>
                   <span className="text-xs font-semibold text-slate-500"> / month</span>
                 </div>
                 <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
@@ -586,7 +586,7 @@ export default function ConcretersSeoPage() {
                 </span>
                 <h3 className="text-2xl font-black text-slate-900">Market Dominator</h3>
                 <div className="pb-4 border-b border-slate-100">
-                  <span className="text-4xl font-black text-slate-950">$1,450</span>
+                  <span className="text-4xl font-black text-slate-950">$890</span>
                   <span className="text-xs font-semibold text-slate-500"> / month</span>
                 </div>
                 <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
@@ -609,10 +609,10 @@ export default function ConcretersSeoPage() {
                 </span>
                 <h3 className="text-2xl font-black text-slate-900">Exclusive Asset Lease</h3>
                 <div className="pb-4 border-b border-slate-100">
-                  <span className="text-4xl font-black text-slate-950">$750 – $1k</span>
+                  <span className="text-4xl font-black text-slate-950">$450 – $650</span>
                   <span className="text-xs font-semibold text-slate-500"> / month</span>
                   <div className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded mt-2 inline-block border border-emerald-200">
-                    🎁 $500 30-Day Trial Available
+                    🎁 $290 30-Day Trial Available
                   </div>
                 </div>
                 <ul className="space-y-3 text-xs sm:text-sm text-slate-700">

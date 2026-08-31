@@ -154,7 +154,7 @@ export default function Navbar() {
                       <div className="font-extrabold text-slate-900 text-xs">
                         Builders, Solar & HVAC
                       </div>
-                      <div className="text-[11px] text-slate-500">High-Ticket Installation Funnels</div>
+                      <div className="text-[11px] text-slate-500">Installation & Service Funnels</div>
                     </div>
                   </a>
                 </div>

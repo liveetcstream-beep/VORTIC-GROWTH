@@ -33,10 +33,10 @@ export default function DentalSeoPage() {
   const [caseAcceptanceRate, setCaseAcceptanceRate] = useState(35); // 35% acceptance rate
 
   const treatmentPresets = {
-    implants: { name: "Dental Implants & All-on-4", avg: 14000, defaultLeads: 25 },
-    invisalign: { name: "Invisalign & Clear Aligners", avg: 7500, defaultLeads: 35 },
-    veneers: { name: "Porcelain Veneers & Smile Makeover", avg: 11000, defaultLeads: 20 },
-    mixed: { name: "Full Comprehensive Practice Mix", avg: 5500, defaultLeads: 45 },
+    implants: { name: "Dental Implants & Restorations", avg: 5500, defaultLeads: 20 },
+    invisalign: { name: "Invisalign & Clear Aligners", avg: 4500, defaultLeads: 25 },
+    veneers: { name: "Porcelain Veneers & Cosmetics", avg: 6000, defaultLeads: 15 },
+    mixed: { name: "Comprehensive Practice Mix", avg: 2500, defaultLeads: 35 },
   };
 
   const handleTreatmentChange = (key: "implants" | "invisalign" | "veneers" | "mixed") => {
@@ -48,7 +48,7 @@ export default function DentalSeoPage() {
   const acceptedPatients = Math.round((patientInquiries * (caseAcceptanceRate / 100)) * 10) / 10;
   const monthlyPipeline = Math.round(acceptedPatients * avgTreatmentValue);
   const annualPipeline = monthlyPipeline * 12;
-  const roiMultiplier = Math.round((monthlyPipeline / 1650) * 10) / 10;
+  const roiMultiplier = Math.round((monthlyPipeline / 990) * 10) / 10;
 
   // Form State
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -57,7 +57,7 @@ export default function DentalSeoPage() {
     dentistName: "",
     suburb: "",
     website: "",
-    priorityTreatment: "Dental Implants & All-on-4",
+    priorityTreatment: "Dental Implants & Restorations",
     phone: "",
     email: "",
   });
@@ -79,8 +79,8 @@ export default function DentalSeoPage() {
       a: "Yes, absolutely. We strictly adhere to the Dental Board of Australia and AHPRA advertising guidelines. We never use banned superlative terms ('best dentist', 'guaranteed pain-free') or misleading testimonials. Instead, we engineer authoritative clinical EEAT signals, localized suburb relevance, and verified Google Maps proximity signals that comply fully with Australian medical advertising laws.",
     },
     {
-      q: "How fast will our dental practice see new high-value patient bookings?",
-      a: "Emergency dentistry and localized Google Maps 3-Pack ranking improvements typically initiate within 30 to 45 days. High-ticket procedure pipelines like Dental Implants and Invisalign suburb micro-silos achieve maximum booking velocity within 60 to 90 days as Google AI and local topical authority mature.",
+      q: "How fast will our dental practice see new patient bookings?",
+      a: "Emergency dentistry and localized Google Maps 3-Pack ranking improvements typically initiate within 30 to 45 days. Procedure pipelines like Dental Implants and Invisalign suburb micro-silos achieve maximum booking velocity within 60 to 90 days as Google AI and local topical authority mature.",
     },
     {
       q: "Do you offer geographic exclusivity to one dental clinic per suburb?",
@@ -98,38 +98,38 @@ export default function DentalSeoPage() {
 
   const procedures = [
     {
-      title: "Dental Implants & All-on-4",
-      value: "$5,500 – $32,000+",
-      desc: "Capture patients actively seeking single tooth replacements, full-arch restorations, and bone grafting in high-income postcodes.",
-      badge: "Highest Margin",
+      title: "Dental Implants & Restorations",
+      value: "$3,500 – $7,500",
+      desc: "Capture patients actively seeking single tooth replacements, implant crowns, and restorative care in your surrounding suburbs.",
+      badge: "High Margin",
     },
     {
       title: "Invisalign & Clear Aligners",
-      value: "$6,500 – $9,500",
+      value: "$4,500 – $7,500",
       desc: "Outrank corporate dental chains for orthodontic searches among young professionals and adults in surrounding suburbs.",
       badge: "High Recurring Demand",
     },
     {
       title: "Porcelain Veneers & Smile Makeovers",
-      value: "$8,000 – $25,000+",
+      value: "$4,000 – $9,500",
       desc: "Dominate aesthetic dentistry searches with high-converting procedure pages and Google AI Overview citations.",
       badge: "Cosmetic Excellence",
     },
     {
       title: "Emergency & Same-Day Dentistry",
-      value: "$600 – $2,500",
+      value: "$400 – $1,200",
       desc: "Lock in the #1 Google Maps spot for urgent toothaches, broken teeth, and immediate patient relief when speed is critical.",
       badge: "Instant Patient Capture",
     },
     {
       title: "Wisdom Teeth & Sedation",
-      value: "$2,500 – $6,000",
-      desc: "Target anxious patients searching for gentle surgical extractions and sleep dentistry options nearby.",
+      value: "$1,500 – $3,500",
+      desc: "Target anxious patients searching for gentle extractions and sleep dentistry options nearby.",
       badge: "Surgical Inquiries",
     },
     {
       title: "General & Family Preventative Care",
-      value: "$1,800+ Annual LTV",
+      value: "$1,200+ Annual LTV",
       desc: "Build a solid foundation of long-term family check-ups, cleans, and pediatric dental patient pipelines.",
       badge: "Lifetime Patient Value",
     },
@@ -327,7 +327,7 @@ export default function DentalSeoPage() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
-              High-Ticket Treatments We <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Rank and Fill</span>
+              Key Treatments We <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Rank and Fill</span>
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
@@ -606,7 +606,7 @@ export default function DentalSeoPage() {
 
                 <div className="pb-4 border-b border-slate-100">
                   <div className="flex items-baseline gap-1.5">
-                    <span className="text-4xl font-black text-slate-950">$950</span>
+                    <span className="text-4xl font-black text-slate-950">$590</span>
                     <span className="text-xs font-semibold text-slate-500">AUD / month</span>
                   </div>
                 </div>
@@ -643,7 +643,7 @@ export default function DentalSeoPage() {
             <div className="rounded-3xl p-8 sm:p-9 flex flex-col justify-between space-y-6 bg-gradient-to-b from-blue-50/50 via-white to-white border-2 border-blue-600 shadow-2xl relative">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-extrabold text-xs shadow-md uppercase tracking-wider flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
-                🔥 Most Popular for High-LTV Implants
+                🔥 Most Popular for High Practice Growth
               </div>
 
               <div className="space-y-4">
@@ -654,12 +654,12 @@ export default function DentalSeoPage() {
                   Dental Market Dominator
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600">
-                  Engineered to capture high-margin Dental Implants, All-on-4, Invisalign, and Veneers across 15+ surrounding postcodes.
+                  Engineered to capture key treatments like Dental Implants, Invisalign, and Veneers across 15+ surrounding postcodes.
                 </p>
 
                 <div className="pb-4 border-b border-slate-100">
                   <div className="flex items-baseline gap-1.5">
-                    <span className="text-4xl font-black text-slate-950">$1,650</span>
+                    <span className="text-4xl font-black text-slate-950">$990</span>
                     <span className="text-xs font-semibold text-slate-500">AUD / month</span>
                   </div>
                 </div>
@@ -675,7 +675,7 @@ export default function DentalSeoPage() {
                   </li>
                   <li className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span><strong>High-LTV Focus:</strong> Implants, All-on-4, Invisalign, Smile Makeovers</span>
+                    <span><strong>Core Treatment Focus:</strong> Implants, Invisalign, Restorations, Veneers</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />

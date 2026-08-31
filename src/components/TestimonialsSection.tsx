@@ -23,7 +23,7 @@ export default function TestimonialsSection() {
       icon: Stethoscope,
       quote:
         "Dental SEO requires strict AHPRA compliance and absolute clinical precision. Vortic Growth built localized treatment hubs for our All-on-4 implants and Invisalign programs that outranked established dental groups. We now consistently book 35+ high-value implant consultations every month on complete organic autopilot.",
-      metrics: "38+ High-Ticket Patient Bookings / Mo • $18k Avg Implant Case",
+      metrics: "38+ Patient Bookings / Mo • $4.5k Avg Treatment Value",
       category: "Healthcare & Dental",
       badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
     },

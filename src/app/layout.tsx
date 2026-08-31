@@ -70,7 +70,7 @@ export default function RootLayout({
               "url": "https://vorticgrowth.com",
               "telephone": "+61401164987",
               "priceRange": "$$$",
-              "description": "High-ticket Local SEO, Google Maps 3-Pack optimization, and suburb-level organic lead generation for trade and commercial enterprises.",
+              "description": "Results-driven Local SEO, Google Maps 3-Pack optimization, and suburb-level organic lead generation for trade and clinical practices.",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Gold Coast",

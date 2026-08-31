@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import {
   Calculator,
-  TrendingUp,
-  DollarSign,
   ArrowRight,
   Sparkles,
   CheckCircle2,
@@ -12,24 +10,24 @@ import {
 
 export default function RoiCalculator() {
   const industries = [
-    { name: "Dentists & Clinics", defaultAvgJob: 5500, defaultLeads: 35 },
-    { name: "Lawyers & Legal Firms", defaultAvgJob: 14000, defaultLeads: 20 },
-    { name: "Concrete & Driveways", defaultAvgJob: 8500, defaultLeads: 35 },
-    { name: "Custom Home Builders", defaultAvgJob: 45000, defaultLeads: 12 },
-    { name: "Roofing & Restorations", defaultAvgJob: 11500, defaultLeads: 25 },
-    { name: "Solar & HVAC Systems", defaultAvgJob: 8000, defaultLeads: 30 },
+    { name: "Dentists & Clinics", defaultAvgJob: 2500, defaultLeads: 25 },
+    { name: "Lawyers & Legal Firms", defaultAvgJob: 4500, defaultLeads: 15 },
+    { name: "Concrete & Driveways", defaultAvgJob: 4800, defaultLeads: 25 },
+    { name: "Custom Home Builders", defaultAvgJob: 18000, defaultLeads: 8 },
+    { name: "Roofing & Restorations", defaultAvgJob: 6500, defaultLeads: 18 },
+    { name: "Solar & HVAC Systems", defaultAvgJob: 4200, defaultLeads: 20 },
   ];
 
   const [selectedIndustry, setSelectedIndustry] = useState(industries[0]);
-  const [leadsPerMonth, setLeadsPerMonth] = useState(35);
-  const [avgJobValue, setAvgJobValue] = useState(8000);
+  const [leadsPerMonth, setLeadsPerMonth] = useState(25);
+  const [avgJobValue, setAvgJobValue] = useState(2500);
   const [closeRate, setCloseRate] = useState(30); // 30% close rate
 
   // Calculations
   const closedDeals = Math.round((leadsPerMonth * (closeRate / 100)) * 10) / 10;
   const monthlyRevenue = Math.round(closedDeals * avgJobValue);
   const annualRevenue = monthlyRevenue * 12;
-  const estimatedRetainer = 1500; // standard benchmark
+  const estimatedRetainer = 890; // realistic market dominator benchmark
   const roiMultiplier = Math.round((monthlyRevenue / estimatedRetainer) * 10) / 10;
 
   const handleIndustryChange = (ind: typeof industries[0]) => {
@@ -54,7 +52,7 @@ export default function RoiCalculator() {
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-            See exactly how many high-margin jobs and new revenue you could add to your books every month by ranking #1 on Google Maps and suburb search results.
+            See how many extra clients and new revenue you could add to your schedule every month by ranking in the top 3 of Google Maps and local suburb search results.
           </p>
         </div>
 
@@ -67,7 +65,7 @@ export default function RoiCalculator() {
             {/* Step 1: Industry Selector */}
             <div className="space-y-3">
               <label className="text-sm font-extrabold text-slate-900 uppercase tracking-wider flex items-center justify-between">
-                <span>1. Select Your Primary Trade or Industry:</span>
+                <span>1. Select Your Trade or Profession:</span>
                 <span className="text-xs text-indigo-600 font-bold">{selectedIndustry.name}</span>
               </label>
 
@@ -92,25 +90,25 @@ export default function RoiCalculator() {
             <div className="space-y-3 pt-4 border-t border-slate-100">
               <div className="flex items-center justify-between">
                 <label className="text-sm font-bold text-slate-900">
-                  2. Targeted Inbound Quote Calls / Month:
+                  2. Targeted Inbound Quote Calls & Forms / Month:
                 </label>
                 <span className="text-lg font-black text-indigo-600 bg-indigo-50 px-3 py-0.5 rounded-lg border border-indigo-100">
-                  {leadsPerMonth} Leads
+                  {leadsPerMonth} Inquiries
                 </span>
               </div>
               <input
                 type="range"
-                min="10"
-                max="75"
+                min="5"
+                max="50"
                 step="5"
                 value={leadsPerMonth}
                 onChange={(e) => setLeadsPerMonth(Number(e.target.value))}
                 className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
               />
               <div className="flex justify-between text-[11px] font-semibold text-slate-400">
-                <span>10 Leads (Starter)</span>
-                <span>35 Leads (Concreters Avg)</span>
-                <span>75 Leads (Dominator)</span>
+                <span>5 Leads (Starter)</span>
+                <span>25 Leads (Average)</span>
+                <span>50 Leads (Dominator)</span>
               </div>
             </div>
 
@@ -118,7 +116,7 @@ export default function RoiCalculator() {
             <div className="space-y-3 pt-4 border-t border-slate-100">
               <div className="flex items-center justify-between">
                 <label className="text-sm font-bold text-slate-900">
-                  3. Average Job / Contract Value ($AUD / $USD):
+                  3. Average Job / Treatment Value ($AUD / $USD):
                 </label>
                 <span className="text-lg font-black text-emerald-700 bg-emerald-50 px-3 py-0.5 rounded-lg border border-emerald-100">
                   ${avgJobValue.toLocaleString()}
@@ -126,17 +124,17 @@ export default function RoiCalculator() {
               </div>
               <input
                 type="range"
-                min="1500"
-                max="50000"
-                step="500"
+                min="500"
+                max="25000"
+                step="250"
                 value={avgJobValue}
                 onChange={(e) => setAvgJobValue(Number(e.target.value))}
                 className="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600"
               />
               <div className="flex justify-between text-[11px] font-semibold text-slate-400">
-                <span>$1,500</span>
+                <span>$500</span>
+                <span>$10,000</span>
                 <span>$25,000</span>
-                <span>$50,000+</span>
               </div>
             </div>
 
@@ -144,7 +142,7 @@ export default function RoiCalculator() {
             <div className="space-y-3 pt-4 border-t border-slate-100">
               <div className="flex items-center justify-between">
                 <label className="text-sm font-bold text-slate-900">
-                  4. Your Typical Quote Close Rate (%):
+                  4. Your Average Close Rate (%):
                 </label>
                 <span className="text-base font-black text-slate-800 bg-slate-100 px-3 py-0.5 rounded-lg border border-slate-200">
                   {closeRate}%
@@ -161,7 +159,7 @@ export default function RoiCalculator() {
               />
               <div className="flex justify-between text-[11px] font-semibold text-slate-400">
                 <span>15% (Conservative)</span>
-                <span>30% (Standard Trade)</span>
+                <span>30% (Standard)</span>
                 <span>60% (High Performer)</span>
               </div>
             </div>
@@ -179,10 +177,10 @@ export default function RoiCalculator() {
               <div className="flex items-center justify-between pb-4 border-b border-slate-800">
                 <span className="text-xs uppercase font-extrabold tracking-widest text-indigo-400 flex items-center gap-1.5">
                   <Sparkles className="w-4 h-4 text-indigo-400" />
-                  Projected Revenue Pipeline
+                  Estimated Monthly Inflow
                 </span>
                 <span className="text-[11px] font-bold bg-emerald-950 text-emerald-400 px-2.5 py-1 rounded-full border border-emerald-800">
-                  High-Intent Traffic
+                  Organic Traffic
                 </span>
               </div>
 
@@ -196,14 +194,14 @@ export default function RoiCalculator() {
                   <span className="text-xs font-medium text-slate-400 tracking-normal">/ mo</span>
                 </div>
                 <p className="text-xs text-slate-400 font-medium">
-                  Based on ~<strong className="text-white font-bold">{closedDeals} signed jobs</strong> each month.
+                  Based on ~<strong className="text-white font-bold">{closedDeals} closed clients/jobs</strong> each month.
                 </p>
               </div>
 
               {/* Big Metric 2: Annual Impact */}
               <div className="space-y-1 pt-4 border-t border-slate-800/80">
                 <div className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-                  Projected Annual Pipeline:
+                  Projected Annual Inbound Volume:
                 </div>
                 <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                   ${annualRevenue.toLocaleString()}
@@ -214,14 +212,14 @@ export default function RoiCalculator() {
               {/* Estimated ROI multiplier */}
               <div className="p-4 rounded-2xl bg-indigo-950/70 border border-indigo-800/70 flex items-center justify-between">
                 <div>
-                  <div className="text-xs font-bold text-indigo-300">Estimated Return on Investment:</div>
+                  <div className="text-xs font-bold text-indigo-300">Estimated ROI Multiplier:</div>
                   <div className="text-2xl font-black text-white tracking-tight">
                     {roiMultiplier}x ROI
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="text-[11px] text-slate-400 font-medium">Payoff Benchmark:</div>
-                  <div className="text-xs font-bold text-emerald-400">Just 1 Job Covers 6+ Months</div>
+                  <div className="text-[11px] text-slate-400 font-medium">Monthly Investment:</div>
+                  <div className="text-xs font-bold text-emerald-400">$890/mo Retainer</div>
                 </div>
               </div>
 
