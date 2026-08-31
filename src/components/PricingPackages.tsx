@@ -4,60 +4,61 @@ import { Check, Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
 export default function PricingPackages() {
   const packages = [
     {
-      name: "Foundation Sprint",
-      tagline: "Core suburb Google Maps 3-Pack push for single-location businesses & tradies.",
-      price: "AUD $490",
+      name: "Local 3-Pack & GBP",
+      tagline: "Ongoing Google Maps 3-Pack ranking boost and local citation management.",
+      price: "AUD $300",
       period: "/ month",
       popular: false,
       features: [
-        "Google Business Profile (GBP) 3-Pack Optimization",
-        "Top 5 High-Intent Core Keyword Targeting",
-        "Local Australian Citations (YellowPages, TrueLocal)",
-        "On-Page Technical & Schema Implementation",
-        "Monthly Ranking & Inbound Call Tracking Report",
+        "Google Business Profile (GBP) Complete Optimization",
+        "Primary & Secondary Category Structuring",
+        "NAP Consistency Across Reputable Australian Directories",
+        "Systematic Patient / Customer Review Generation System",
+        "Local Competitor Visibility & Proximity Monitoring",
         "Month-to-Month (No Lock-In Contracts)",
       ],
-      ctaText: "Start Foundation Sprint",
+      ctaText: "Start Local 3-Pack Plan",
       ctaLink: "#audit-form",
-      badge: "Local Starter",
+      badge: "Modular Option",
     },
     {
-      name: "Market Dominator",
-      tagline: "Full regional suburb cluster + Google AI Overview dominance.",
-      price: "AUD $890",
+      name: "Full Growth Engine",
+      tagline: "Everything bundled together for maximum patient/lead acquisition velocity.",
+      price: "AUD $2,000",
       period: "/ month",
+      trialNote: "+ AUD $900 one-off Phase 1 Technical Setup",
       popular: true,
       features: [
-        "Everything in Foundation Sprint",
-        "15+ Dedicated Suburb-Level Micro-Silos (Every Postal Code)",
-        "Google AI Overviews & Gemini Generative Optimization",
-        "GMB Proximity Radius Expansion (Surrounding Suburbs)",
-        "Instant WhatsApp Lead Widget & Direct Call Routing",
-        "100% Geographic Suburb Exclusivity Guarantee",
-        "Priority Support & Bi-Weekly Review",
+        "Phase 1: Full Technical Fixes, Speed (57→85+) & Redirect Consolidation",
+        "Phase 2: Deep On-Page SEO, Content Clusters & Clinical/Trade Schema",
+        "Phase 3: Ongoing Google Business Profile 3-Pack Supremacy",
+        "Off-Page Authority: Toxic Backlink Audit, Disavow & Quality Link Building",
+        "Generative Engine Optimization (GEO): #1 Google AI Overview Citations",
+        "100% Territory Exclusivity Guarantee per Suburb",
+        "Direct Lead Search Architect Access & Monthly Transparent Reporting",
       ],
-      ctaText: "Claim Regional Domination",
+      ctaText: "Claim Full Growth Package",
       ctaLink: "#audit-form",
-      badge: "🔥 Best Value & Most Popular",
+      badge: "🔥 RECOMMENDED (Best Value)",
     },
     {
-      name: "Exclusive Asset Lease",
-      tagline: "Turnkey live ranking lead asset (Rank & Rent) — immediate leads.",
-      price: "AUD $450 – $650",
+      name: "On-Page & Authority",
+      tagline: "Targeted organic content expansion, topical authority & backlink cleanup.",
+      price: "AUD $1,500",
       period: "/ month",
-      trialNote: "30-Day Trial available at AUD $290",
+      trialNote: "Or Modular from AUD $600 - $650/mo",
       popular: false,
       features: [
-        "100% Exclusive ownership of all inbound phone calls & forms",
-        "Live Page 1 & Google AI Overview ranked platform",
-        "10-Minute technical setup (Call number forwarded to your phone)",
-        "Zero setup fees, zero ad spend, zero waiting for rankings",
-        "Your business details & license integrated into EEAT badges",
-        "First job won covers multiple months of lease",
+        "Comprehensive Keyword Research & Intent Mapping",
+        "High-Intent Treatment & Service Page Optimization",
+        "Dedicated FAQ & Conversational Search Blocks (AEO)",
+        "Toxic Backlink Audit & Disavow (Fixes High Spam Scores)",
+        "Quality Australian Niche Citations & Backlink Acquisition",
+        "Google Search Console & Entity Optimization",
       ],
-      ctaText: "Inquire Asset Availability",
-      ctaLink: "https://wa.me/61401164987?text=Hi%20Bilal,%20I'd%20like%20to%20check%20Exclusive%20Asset%20Lease%20availability%20for%20my%20trade.",
-      badge: "Turnkey Inbound Asset",
+      ctaText: "Start Authority Sprint",
+      ctaLink: "#audit-form",
+      badge: "Modular Option",
     },
   ];
 
@@ -69,15 +70,15 @@ export default function PricingPackages() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-xs sm:text-sm font-bold text-indigo-900 shadow-sm">
             <ShieldCheck className="w-4 h-4 text-indigo-600" />
-            <span>Transparent Partnership Models (AUD)</span>
+            <span>Transparent Investment Plans (AUD)</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
-            Accessible Pricing. <span className="gradient-text">Genuine ROI in AUD.</span>
+            Market-Standard Pricing. <span className="gradient-text">Exceptional Value.</span>
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-            All prices in Australian Dollars (AUD). No hidden currency conversion fees, no locked-in 12-month retainers, and strict 1-client territory exclusivity.
+            Our Full Growth Package sits right in the <strong>$1,500–$2,500/mo</strong> Australian standard sweet spot—well below the <strong>$2,500–$5,000/mo</strong> charged by large Gold Coast agencies for comparable scopes.
           </p>
         </div>
 
@@ -125,8 +126,8 @@ export default function PricingPackages() {
                     <span className="text-xs font-semibold text-slate-500">{pkg.period}</span>
                   </div>
                   {pkg.trialNote && (
-                    <div className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md mt-2 inline-block border border-emerald-200">
-                      🎁 {pkg.trialNote}
+                    <div className="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-md mt-2 inline-block border border-indigo-200">
+                      ⚡ {pkg.trialNote}
                     </div>
                   )}
                 </div>
@@ -160,6 +161,31 @@ export default function PricingPackages() {
 
             </div>
           ))}
+        </div>
+
+        {/* Optional Add-Ons Bar (Matching Proposal Section 5) */}
+        <div className="mt-14 p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-200">
+          <div className="text-xs font-extrabold uppercase tracking-wider text-slate-500 pb-3">
+            Optional Strategic Add-Ons (Available on Request):
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs text-slate-700 font-medium">
+            <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <span className="font-bold text-slate-900 block">Social Media Content:</span>
+              <span>AUD $25 per post (no minimum)</span>
+            </div>
+            <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <span className="font-bold text-slate-900 block">Google Business Profile Ads:</span>
+              <span>From AUD $250 setup + $200/mo</span>
+            </div>
+            <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <span className="font-bold text-slate-900 block">Website & On-Site Ads:</span>
+              <span>From AUD $250 setup + $200/mo</span>
+            </div>
+            <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <span className="font-bold text-slate-900 block text-indigo-700">Brand Search Protection Ads:</span>
+              <span>From AUD $300 setup + $250/mo</span>
+            </div>
+          </div>
         </div>
 
       </div>

@@ -26,7 +26,7 @@ export default function RoiCalculator() {
   const closedDeals = Math.round((leadsPerMonth * (closeRate / 100)) * 10) / 10;
   const monthlyRevenue = Math.round(closedDeals * avgJobValue);
   const annualRevenue = monthlyRevenue * 12;
-  const estimatedRetainer = 890; // realistic market dominator benchmark in AUD
+  const estimatedRetainer = 2000; // recommended full growth engine benchmark in AUD
   const roiMultiplier = Math.round((monthlyRevenue / estimatedRetainer) * 10) / 10;
 
   const handleIndustryChange = (ind: typeof industries[0]) => {
@@ -218,7 +218,7 @@ export default function RoiCalculator() {
                 </div>
                 <div className="text-right">
                   <div className="text-[11px] text-slate-400 font-medium">Monthly Investment:</div>
-                  <div className="text-xs font-bold text-emerald-400">AUD $890 / month</div>
+                  <div className="text-xs font-bold text-emerald-400">AUD $2,000 / month</div>
                 </div>
               </div>
 
