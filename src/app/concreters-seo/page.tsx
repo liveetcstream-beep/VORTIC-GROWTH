@@ -542,86 +542,100 @@ export default function ConcretersSeoPage() {
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-xs sm:text-sm font-bold text-indigo-900 shadow-sm">
               <Award className="w-4 h-4 text-indigo-600" />
-              <span>Concreter Growth Packages</span>
+              <span>Concreter & Tradie Investment Plans (AUD)</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
               Transparent Pricing. <span className="gradient-text">Zero Lock-In Contracts.</span>
             </h2>
+
+            <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
+              All prices in Australian Dollars (AUD). Strict 1-partner territory exclusivity per trade corridor.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
             
-            {/* Card 1 */}
+            {/* Card 1: Modular GBP Plan */}
             <div className="card-clean rounded-3xl p-8 flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md">
-                  Single Suburb
+                  Modular Starter
                 </span>
-                <h3 className="text-2xl font-black text-slate-900">Foundation Sprint</h3>
+                <h3 className="text-2xl font-black text-slate-900">Local 3-Pack & GBP</h3>
+                <p className="text-xs text-slate-500">Core suburb Google Maps 3-Pack optimization & local citations.</p>
                 <div className="pb-4 border-b border-slate-100">
-                  <span className="text-4xl font-black text-slate-950">AUD $490</span>
+                  <span className="text-4xl font-black text-slate-950">AUD $300</span>
                   <span className="text-xs font-semibold text-slate-500"> / month</span>
                 </div>
                 <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
-                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>GBP 3-Pack Optimization</span></li>
-                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Top 5 High-Intent Keywords</span></li>
-                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>QBCC Schema Integration</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Google Business Profile (GBP) Optimization</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Australian Directory Citations (YellowPages, TrueLocal)</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>QBCC License & Trade Schema Integration</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Systematic Review Generation Framework</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Month-to-Month (No Lock-in Contracts)</span></li>
                 </ul>
               </div>
-              <a href="#concrete-audit" className="w-full py-3.5 rounded-xl bg-slate-900 text-white font-extrabold text-sm text-center block">
-                Start Foundation
+              <a href="#concrete-audit" className="w-full py-3.5 rounded-xl bg-slate-900 text-white font-extrabold text-sm text-center block hover:bg-slate-800 transition-all">
+                Start Local 3-Pack Plan
               </a>
             </div>
 
-            {/* Card 2 */}
-            <div className="rounded-3xl p-8 flex flex-col justify-between space-y-6 bg-gradient-to-b from-indigo-50/50 via-white to-white border-2 border-indigo-600 shadow-2xl relative">
+            {/* Card 2: Recommended Full Growth Engine */}
+            <div className="rounded-3xl p-8 flex flex-col justify-between space-y-6 bg-gradient-to-b from-indigo-50/60 via-white to-white border-2 border-indigo-600 shadow-2xl relative">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-extrabold text-xs shadow-md uppercase tracking-wider flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
-                🔥 Most Popular for High ROI
+                🔥 RECOMMENDED (Full Suburb Engine)
               </div>
               <div className="space-y-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-indigo-700 bg-indigo-100 px-2.5 py-1 rounded-md">
                   Regional Dominator
                 </span>
-                <h3 className="text-2xl font-black text-slate-900">Market Dominator</h3>
+                <h3 className="text-2xl font-black text-slate-900">Full Growth Engine</h3>
+                <p className="text-xs text-slate-500">Full 57-suburb micro-silos + Google AI Overview dominance.</p>
                 <div className="pb-4 border-b border-slate-100">
-                  <span className="text-4xl font-black text-slate-950">AUD $890</span>
+                  <span className="text-4xl font-black text-slate-950">AUD $2,000</span>
                   <span className="text-xs font-semibold text-slate-500"> / month</span>
+                  <div className="text-xs font-medium text-slate-500 pt-1">(+ AUD $900 one-off Phase 1 Technical Setup)</div>
                 </div>
                 <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
-                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span><strong>15+ Suburb Micro-Silos</strong></span></li>
-                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span><strong>Google AI Overviews (GEO)</strong></span></li>
-                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span><strong>Instant WhatsApp Routing</strong></span></li>
-                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span><strong>100% Territory Exclusivity</strong></span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span><strong>15–57 Suburb Micro-Silos (Every Postal Code)</strong></span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span><strong>Google AI Overviews & Gemini (GEO) Ranking</strong></span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span><strong>Toxic Backlink Audit & Disavow (Cleanup)</strong></span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span><strong>Instant WhatsApp Lead Widget & Direct Call Routing</strong></span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span><strong>100% Suburb Territory Exclusivity Guarantee</strong></span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span><strong>Direct Access to Lead Search Architect</strong></span></li>
                 </ul>
               </div>
-              <a href="#concrete-audit" className="w-full py-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-extrabold text-sm text-center block shadow-lg shadow-indigo-600/30">
+              <a href="#concrete-audit" className="w-full py-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-extrabold text-sm text-center block shadow-lg shadow-indigo-600/30 hover:shadow-xl hover:translate-y-[-1px] transition-all">
                 Claim Regional Domination →
               </a>
             </div>
 
-            {/* Card 3 */}
+            {/* Card 3: Exclusive Asset Lease */}
             <div className="card-clean rounded-3xl p-8 flex flex-col justify-between space-y-6">
               <div className="space-y-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">
                   Turnkey Live Asset
                 </span>
                 <h3 className="text-2xl font-black text-slate-900">Exclusive Asset Lease</h3>
+                <p className="text-xs text-slate-500">Lease a live Page 1 ranked platform with instant call routing.</p>
                 <div className="pb-4 border-b border-slate-100">
                   <span className="text-4xl font-black text-slate-950">AUD $450 – $650</span>
                   <span className="text-xs font-semibold text-slate-500"> / month</span>
-                  <div className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded mt-2 inline-block border border-emerald-200">
+                  <div className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md mt-2 inline-block border border-emerald-200">
                     🎁 AUD $290 30-Day Trial Available
                   </div>
                 </div>
                 <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
-                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Immediate leads from day one</span></li>
-                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Live Page 1 ranked platform</span></li>
-                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Direct phone & form forwarding</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Immediate inbound calls from day one</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Live Page 1 & Google AI ranked platform</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>10-Minute setup (Calls forwarded to your phone)</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>Your QBCC license & business branding integrated</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" /><span>First signed job covers multiple months of lease</span></li>
                 </ul>
               </div>
-              <a href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'd%20like%20to%20check%20Concreter%20Asset%20Lease%20availability." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl bg-slate-900 text-white font-extrabold text-sm text-center block">
+              <a href="https://wa.me/61401164987?text=Hi%20Bilal,%20I'd%20like%20to%20check%20Concreter%20Asset%20Lease%20availability." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl bg-slate-900 text-white font-extrabold text-sm text-center block hover:bg-slate-800 transition-all">
                 Inquire Asset Lease
               </a>
             </div>
