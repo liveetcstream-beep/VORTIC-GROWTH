@@ -44,11 +44,12 @@ export default function Footer() {
               Core Capabilities
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400 font-medium">
-              <li><a href="#suburb-engine" className="hover:text-white transition-colors">Suburb Micro-Silos</a></li>
-              <li><a href="#suburb-engine" className="hover:text-white transition-colors">Google Maps 3-Pack Proximity</a></li>
-              <li><a href="#suburb-engine" className="hover:text-white transition-colors">Google AI Overviews (GEO)</a></li>
-              <li><a href="#case-study" className="hover:text-white transition-colors">Exclusive Asset Leasing</a></li>
-              <li><a href="#calculator" className="hover:text-white transition-colors">Inbound Lead Funnel Routing</a></li>
+              <li><a href="/dental-seo" className="text-blue-400 font-bold hover:text-white transition-colors">🦷 Dental & Medical Practice SEO</a></li>
+              <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Suburb Micro-Silos</a></li>
+              <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Google Maps 3-Pack Proximity</a></li>
+              <li><a href="/#suburb-engine" className="hover:text-white transition-colors">Google AI Overviews (GEO)</a></li>
+              <li><a href="/#case-study" className="hover:text-white transition-colors">Exclusive Asset Leasing</a></li>
+              <li><a href="/#calculator" className="hover:text-white transition-colors">Inbound Lead Funnel Routing</a></li>
             </ul>
           </div>
 

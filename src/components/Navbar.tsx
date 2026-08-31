@@ -51,24 +51,27 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Nav Items */}
-          <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
-            <a href="#proof" className="hover:text-indigo-600 transition-colors">
-              Verified Results
+          <nav className="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+            <a href="/dental-seo" className="text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200 font-bold hover:bg-blue-100 transition-colors flex items-center gap-1">
+              <span>🦷 Dental SEO</span>
             </a>
-            <a href="#case-study" className="hover:text-indigo-600 transition-colors">
-              Concreters Case Study
+            <a href="/#proof" className="hover:text-indigo-600 transition-colors">
+              Results
             </a>
-            <a href="#suburb-engine" className="hover:text-indigo-600 transition-colors">
-              The Suburb Engine
+            <a href="/#industries" className="hover:text-indigo-600 transition-colors">
+              Industries
             </a>
-            <a href="#calculator" className="hover:text-indigo-600 transition-colors">
+            <a href="/#case-study" className="hover:text-indigo-600 transition-colors">
+              Case Studies
+            </a>
+            <a href="/#suburb-engine" className="hover:text-indigo-600 transition-colors">
+              Suburb Engine
+            </a>
+            <a href="/#calculator" className="hover:text-indigo-600 transition-colors">
               ROI Calculator
             </a>
-            <a href="#packages" className="hover:text-indigo-600 transition-colors">
+            <a href="/#packages" className="hover:text-indigo-600 transition-colors">
               Pricing
-            </a>
-            <a href="#faq" className="hover:text-indigo-600 transition-colors">
-              FAQ
             </a>
           </nav>
 
@@ -111,46 +114,46 @@ export default function Navbar() {
         <div className="lg:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 shadow-xl">
           <div className="flex flex-col space-y-3 font-semibold text-slate-800 text-base">
             <a
-              href="#proof"
+              href="/dental-seo"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2 text-blue-700 font-bold flex items-center gap-1.5"
+            >
+              <span>🦷 Dental Practice SEO</span>
+            </a>
+            <a
+              href="/#proof"
               onClick={() => setMobileMenuOpen(false)}
               className="py-2 hover:text-indigo-600"
             >
               Verified Results
             </a>
             <a
-              href="#case-study"
+              href="/#industries"
               onClick={() => setMobileMenuOpen(false)}
               className="py-2 hover:text-indigo-600"
             >
-              Concreters Case Study
+              Industries We Dominate
             </a>
             <a
-              href="#suburb-engine"
+              href="/#case-study"
               onClick={() => setMobileMenuOpen(false)}
               className="py-2 hover:text-indigo-600"
             >
-              The Suburb Engine
+              Case Studies & Proof
             </a>
             <a
-              href="#calculator"
+              href="/#calculator"
               onClick={() => setMobileMenuOpen(false)}
               className="py-2 hover:text-indigo-600"
             >
               ROI Calculator
             </a>
             <a
-              href="#packages"
+              href="/#packages"
               onClick={() => setMobileMenuOpen(false)}
               className="py-2 hover:text-indigo-600"
             >
               Pricing & Retainers
-            </a>
-            <a
-              href="#faq"
-              onClick={() => setMobileMenuOpen(false)}
-              className="py-2 hover:text-indigo-600"
-            >
-              Frequently Asked Questions
             </a>
           </div>
 
