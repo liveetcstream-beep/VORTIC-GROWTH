@@ -62,8 +62,30 @@ export default function DentalSeoPage() {
     email: "",
   });
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    try {
+      await fetch("/api/audit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          businessName: formData.practiceName,
+          contactName: formData.dentistName,
+          suburb: formData.suburb,
+          website: formData.website,
+          phone: formData.phone,
+          email: formData.email,
+          tradeType: formData.priorityTreatment,
+          source: "Dental SEO Audit Form",
+        }),
+      });
+    } catch (err) {
+      console.error(err);
+    }
+    const waText = encodeURIComponent(
+      `Hi Bilal! I just submitted a Dental Growth Audit Request on Vortic Growth:\n\n• Practice: ${formData.practiceName}\n• Dentist Name: ${formData.dentistName}\n• Suburb: ${formData.suburb}\n• Priority Treatment: ${formData.priorityTreatment}\n• Phone: ${formData.phone}\n• Email: ${formData.email}\n• Website: ${formData.website}`
+    );
+    window.open(`https://wa.me/61401164987?text=${waText}`, "_blank");
     setFormSubmitted(true);
   };
 

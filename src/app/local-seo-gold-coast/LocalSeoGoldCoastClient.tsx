@@ -37,6 +37,24 @@ export default function LocalSeoGoldCoastPage() {
     phone: "",
   });
 
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      await fetch("/api/audit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, source: "Gold Coast Local SEO Audit Form" }),
+      });
+    } catch (err) {
+      console.error(err);
+    }
+    const waText = encodeURIComponent(
+      `Hi Bilal! I just submitted a Local SEO Audit Request on Vortic Growth:\n\n• Business: ${formData.businessName}\n• Contact Name: ${formData.contactName}\n• Suburb: ${formData.suburb}\n• Industry: ${formData.industry}\n• Phone: ${formData.phone}\n• Website: ${formData.website}`
+    );
+    window.open(`https://wa.me/61401164987?text=${waText}`, "_blank");
+    setFormSubmitted(true);
+  };
+
   const goldCoastSuburbs = [
     { name: "Surfers Paradise", postcode: "4217", type: "Commercial & Tourism Hub" },
     { name: "Southport", postcode: "4215", type: "CBD & Medical / Legal District" },
@@ -104,11 +122,6 @@ export default function LocalSeoGoldCoastPage() {
       a: "Initial Google Maps 3-Pack movement and suburb ranking improvements typically manifest between 30 and 45 days. Our clients see full compound booking velocity within 60 to 90 days as local entity authority and Australian citations mature.",
     },
   ];
-
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormSubmitted(true);
-  };
 
   return (
     <main className="min-h-screen flex flex-col bg-white">

@@ -63,8 +63,30 @@ export default function ConcretersSeoPage() {
     email: "",
   });
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    try {
+      await fetch("/api/audit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          businessName: formData.businessName,
+          contactName: formData.contractorName,
+          suburb: formData.suburb,
+          website: formData.website,
+          phone: formData.phone,
+          email: formData.email,
+          tradeType: formData.primaryConcreteWork,
+          source: "Concreters SEO Audit Form",
+        }),
+      });
+    } catch (err) {
+      console.error(err);
+    }
+    const waText = encodeURIComponent(
+      `Hi Bilal! I just submitted a Concreter Audit Request on Vortic Growth:\n\n• Business: ${formData.businessName}\n• Contractor: ${formData.contractorName}\n• Suburb: ${formData.suburb}\n• Concrete Work: ${formData.primaryConcreteWork}\n• Phone: ${formData.phone}\n• Email: ${formData.email}\n• Website: ${formData.website}`
+    );
+    window.open(`https://wa.me/61401164987?text=${waText}`, "_blank");
     setFormSubmitted(true);
   };
 

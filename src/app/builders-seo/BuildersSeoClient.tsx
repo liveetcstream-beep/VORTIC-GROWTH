@@ -410,15 +410,35 @@ export default function BuildersSeoClient() {
                     <div className="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto border border-emerald-200">
                       <CheckCircle2 className="w-8 h-8" />
                     </div>
-                    <h3 className="text-2xl font-black text-slate-900">Audit Request Received</h3>
+                    <h3 className="text-2xl font-black text-slate-900">Audit Request Received & Sent to WhatsApp!</h3>
                     <p className="text-sm text-slate-600 max-w-md mx-auto">
-                      We'll prepare your custom Gold Coast builder ranking audit within 24 business hours.
+                      Our Lead Builder Search Architect has received your details and will prepare your ranking audit shortly.
                     </p>
                   </div>
                 ) : (
                   <form
-                    onSubmit={(e) => {
+                    onSubmit={async (e) => {
                       e.preventDefault();
+                      try {
+                        await fetch("/api/audit", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({
+                            businessName: formData.builderName,
+                            contactName: formData.contactName,
+                            suburb: formData.suburb,
+                            phone: formData.phone,
+                            website: formData.website,
+                            source: "Builders SEO Audit Form",
+                          }),
+                        });
+                      } catch (err) {
+                        console.error(err);
+                      }
+                      const waText = encodeURIComponent(
+                        `Hi Bilal! I just submitted a Custom Builder Audit Request on Vortic Growth:\n\n• Building Company: ${formData.builderName}\n• Contact Name: ${formData.contactName}\n• Suburb: ${formData.suburb}\n• Phone: ${formData.phone}\n• Website: ${formData.website}`
+                      );
+                      window.open(`https://wa.me/61401164987?text=${waText}`, "_blank");
                       setFormSubmitted(true);
                     }}
                     className="space-y-4"

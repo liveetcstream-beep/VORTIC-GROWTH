@@ -159,15 +159,28 @@ export default function ContactClient() {
                     <div className="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto border border-emerald-200">
                       <CheckCircle2 className="w-8 h-8" />
                     </div>
-                    <h4 className="text-2xl font-black text-slate-900">Inquiry Received!</h4>
+                    <h4 className="text-2xl font-black text-slate-900">Inquiry Received & Sent to WhatsApp!</h4>
                     <p className="text-sm text-slate-600 max-w-md mx-auto">
-                      Thank you! Bilal will review your Google Maps footprint and contact you within 24 hours.
+                      Thank you! Bilal will review your Google Maps footprint and contact you shortly.
                     </p>
                   </div>
                 ) : (
                   <form
-                    onSubmit={(e) => {
+                    onSubmit={async (e) => {
                       e.preventDefault();
+                      try {
+                        await fetch("/api/audit", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({ ...formData, contactName: formData.name, source: "Contact Form" }),
+                        });
+                      } catch (err) {
+                        console.error(err);
+                      }
+                      const waText = encodeURIComponent(
+                        `Hi Bilal! I just submitted an Inquiry on Vortic Growth:\n\n• Name: ${formData.name}\n• Phone: ${formData.phone}\n• Email: ${formData.email}\n• Business: ${formData.businessName}\n• Suburb: ${formData.suburb}\n• Service: ${formData.serviceType}\n• Message: ${formData.message}`
+                      );
+                      window.open(`https://wa.me/61401164987?text=${waText}`, "_blank");
                       setFormSubmitted(true);
                     }}
                     className="space-y-4"
