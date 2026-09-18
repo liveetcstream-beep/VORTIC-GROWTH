@@ -149,15 +149,28 @@ export default function PimpamaClient() {
                 {formSubmitted ? (
                   <div className="p-6 bg-emerald-950/40 border border-emerald-500/30 rounded-2xl text-center space-y-3">
                     <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto animate-bounce" />
-                    <h4 className="text-lg font-bold text-white">Audit Request Received!</h4>
+                    <h4 className="text-lg font-bold text-white">Audit Request Received & Sent to WhatsApp!</h4>
                     <p className="text-xs text-slate-300">
-                      Our Lead Search Architect will analyze your Pimpama Google Business Profile within 4 hours.
+                      Our Lead Search Architect has received your Pimpama business details and will analyze your profile shortly.
                     </p>
                   </div>
                 ) : (
                   <form
-                    onSubmit={(e) => {
+                    onSubmit={async (e) => {
                       e.preventDefault();
+                      try {
+                        await fetch("/api/audit", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({ ...formData, suburb: "Pimpama 4209", source: "Pimpama Audit Form" }),
+                        });
+                      } catch (err) {
+                        console.error(err);
+                      }
+                      const waText = encodeURIComponent(
+                        `Hi Bilal! I just submitted an Audit Request on Vortic Growth for Pimpama (4209):\n\n• Business: ${formData.businessName}\n• Contact Name: ${formData.contactName}\n• Phone: ${formData.phone}\n• Industry: ${formData.tradeType}\n• Suburb: Pimpama (4209)`
+                      );
+                      window.open(`https://wa.me/61401164987?text=${waText}`, "_blank");
                       setFormSubmitted(true);
                     }}
                     className="space-y-4 text-xs"

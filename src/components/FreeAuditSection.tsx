@@ -22,9 +22,21 @@ export default function FreeAuditSection() {
     email: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate instantaneous capture & show confirmation
+    try {
+      await fetch("/api/audit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, source: "Free Audit Section Form" }),
+      });
+    } catch (err) {
+      console.error(err);
+    }
+    const waText = encodeURIComponent(
+      `Hi Bilal! I just submitted an Audit Request on Vortic Growth:\n\n• Business: ${formData.businessName}\n• Trade/Category: ${formData.trade}\n• Suburb: ${formData.suburb}\n• Phone: ${formData.phone}\n• Email: ${formData.email}\n• Website: ${formData.website}`
+    );
+    window.open(`https://wa.me/61401164987?text=${waText}`, "_blank");
     setSubmitted(true);
   };
 
