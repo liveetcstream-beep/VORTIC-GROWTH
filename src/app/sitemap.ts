@@ -18,6 +18,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/local-seo-pimpama`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.94,
+    },
+    {
+      url: `${baseUrl}/local-seo-coomera`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.94,
+    },
+    {
+      url: `${baseUrl}/tradie-seo-gold-coast`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.93,
+    },
+    {
       url: `${baseUrl}/dental-seo`,
       lastModified: currentDate,
       changeFrequency: "weekly",
@@ -52,6 +70,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/blog/northern-gold-coast-local-seo-guide-2026`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/blog/how-to-rank-in-google-ai-overviews-gold-coast`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.82,
     },
     {
       url: `${baseUrl}/blog/gold-coast-google-ai-overviews-2026`,

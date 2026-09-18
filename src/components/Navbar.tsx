@@ -133,18 +133,51 @@ export default function Navbar() {
                   </a>
 
                   <a
-                    href="/concreters-seo"
+                    href="/tradie-seo-gold-coast"
+                    onClick={() => setDropdownOpen(false)}
+                    className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-emerald-50/80 transition-colors group"
+                  >
+                    <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                      <Hammer className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="font-extrabold text-slate-900 text-xs group-hover:text-emerald-700 flex items-center gap-1.5">
+                        <span>Tradie SEO Gold Coast</span>
+                        <span className="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-black">Contractors</span>
+                      </div>
+                      <div className="text-[11px] text-slate-500 font-normal">Plumbers, Electricians, Builders & Tradies</div>
+                    </div>
+                  </a>
+
+                  <a
+                    href="/local-seo-pimpama"
                     onClick={() => setDropdownOpen(false)}
                     className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-indigo-50/80 transition-colors group"
                   >
                     <div className="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center shrink-0 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-                      <Hammer className="w-4 h-4" />
+                      <MapPin className="w-4 h-4" />
                     </div>
                     <div>
                       <div className="font-extrabold text-slate-900 text-xs group-hover:text-indigo-700">
-                        Concrete & Tradies
+                        Pimpama Local SEO (4209)
                       </div>
-                      <div className="text-[11px] text-slate-500 font-normal">Driveways, Slabs & Commercial Leads</div>
+                      <div className="text-[11px] text-slate-500 font-normal">Gainsborough Greens & Northern Corridor</div>
+                    </div>
+                  </a>
+
+                  <a
+                    href="/local-seo-coomera"
+                    onClick={() => setDropdownOpen(false)}
+                    className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-purple-50/80 transition-colors group"
+                  >
+                    <div className="w-8 h-8 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                      <MapPin className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="font-extrabold text-slate-900 text-xs group-hover:text-purple-700">
+                        Coomera Local SEO (4209)
+                      </div>
+                      <div className="text-[11px] text-slate-500 font-normal">Westfield, Upper Coomera & Marine Hub</div>
                     </div>
                   </a>
 

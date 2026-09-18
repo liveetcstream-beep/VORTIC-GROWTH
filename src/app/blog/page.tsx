@@ -34,6 +34,26 @@ export const metadata: Metadata = {
 export default function BlogIndexPage() {
   const articles = [
     {
+      slug: "northern-gold-coast-local-seo-guide-2026",
+      title: "The Ultimate Northern Gold Coast Local SEO & Google Maps Blueprint (2026)",
+      summary:
+        "How Pimpama (4209), Coomera (4209), and Ormeau (4208) local service businesses and tradies dominate Google Maps 3-Packs and Gemini AI Overviews.",
+      readTime: "12 min read",
+      date: "September 2026",
+      category: "Northern GC Pillar",
+      badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
+    },
+    {
+      slug: "how-to-rank-in-google-ai-overviews-gold-coast",
+      title: "How to Get Cited in Google AI Overviews & Perplexity: Gold Coast GEO Guide",
+      summary:
+        "Master Generative Engine Optimization (GEO). How Google Gemini extracts local entity data and cites top Gold Coast service providers.",
+      readTime: "9 min read",
+      date: "September 2026",
+      category: "AI Search & GEO",
+      badgeColor: "bg-purple-50 text-purple-700 border-purple-200",
+    },
+    {
       slug: "gold-coast-google-ai-overviews-2026",
       title: "Why Gold Coast Local Businesses are Losing Leads to Google AI Overviews in 2026",
       summary:
