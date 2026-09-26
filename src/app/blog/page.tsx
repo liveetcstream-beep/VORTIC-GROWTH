@@ -44,6 +44,46 @@ export default function BlogIndexPage() {
       badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
     },
     {
+      slug: "google-maps-spam-fighting-gold-coast",
+      title: "Google Maps Spam Fighting & Multi-Location GBP Setup in Gold Coast (2026)",
+      summary:
+        "How Gold Coast contractors remove fake competitor GMB profiles along the M1 corridor and build dominant multi-location profiles.",
+      readTime: "8 min read",
+      date: "September 2026",
+      category: "Maps & GBP Strategy",
+      badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
+    },
+    {
+      slug: "local-schema-entity-seo-gold-coast",
+      title: "Local Schema & Entity Graph Markup: Winning Gemini AI Citations in QLD",
+      summary:
+        "How to code JSON-LD LocalBusiness schema and sameAs entity triples to win Google Gemini AI Overviews citations.",
+      readTime: "10 min read",
+      date: "September 2026",
+      category: "Technical GEO",
+      badgeColor: "bg-purple-50 text-purple-700 border-purple-200",
+    },
+    {
+      slug: "seo-vs-google-ads-gold-coast-tradies",
+      title: "Local SEO vs Google Ads for Gold Coast Tradies (2026 Financial Benchmarks)",
+      summary:
+        "A transparent financial comparison of Google Ads PPC ($35-$65/click) vs Organic Local SEO for Gold Coast trade contractors.",
+      readTime: "7 min read",
+      date: "September 2026",
+      category: "ROI & Benchmarks",
+      badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
+    },
+    {
+      slug: "gold-coast-local-citations-directory-guide",
+      title: "Top 50 Gold Coast Local Citation Directories for Google Maps & AI Indexing",
+      summary:
+        "The authoritative list of Australian NAP directory citations that move the needle for Gold Coast Google Maps 3-Packs and AI search.",
+      readTime: "11 min read",
+      date: "September 2026",
+      category: "Citation Vault",
+      badgeColor: "bg-sky-50 text-sky-700 border-sky-200",
+    },
+    {
       slug: "how-to-rank-in-google-ai-overviews-gold-coast",
       title: "How to Get Cited in Google AI Overviews & Perplexity: Gold Coast GEO Guide",
       summary:
