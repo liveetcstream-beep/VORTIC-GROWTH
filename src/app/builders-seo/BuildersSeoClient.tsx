@@ -23,6 +23,15 @@ import {
   Send,
   Award,
   Hammer,
+  ShieldAlert,
+  Target,
+  MapPinned,
+  TrendingDown,
+  Users,
+  FileCheck,
+  BadgeCheck,
+  Landmark,
+  HelpCircle,
 } from "lucide-react";
 
 export default function BuildersSeoClient() {
@@ -76,6 +85,22 @@ export default function BuildersSeoClient() {
     {
       q: "How long does it take for a building company to see high-value inquiries?",
       a: "Phase 1 technical fix, Google Business Profile re-architecture, and QBCC structured schema are deployed in the first 14 days. Suburb micro-silos typically achieve Google Maps 3-Pack and Page 1 ranking within 45 to 90 days. Because a single custom home contract represents $500k to $1.5M+, just one converted inquiry delivers immediate massive ROI.",
+    },
+    {
+      q: "Do you work with builders outside the Gold Coast?",
+      a: "Our core focus is the Gold Coast — from Coomera to Coolangatta — because deep suburb-level relevance is what wins the 3-Pack. We also take on select partners across the Tweed Coast and Brisbane on application. If your territory is outside these areas, mention it in your audit request and we will tell you honestly whether we are the right fit.",
+    },
+    {
+      q: "What does the QBCC schema integration actually do?",
+      a: "It encodes your QBCC licence number, business entity, service areas and review data into structured markup that Google and AI search engines can read with certainty. When a homeowner searches 'licensed custom builder Hope Island', entity clarity is what separates businesses Google confidently recommends from businesses it is unsure about. It also protects you against unlicensed competitors appearing more 'legitimate' online than they are.",
+    },
+    {
+      q: "My builder website is old and slow. Can you still help?",
+      a: "Yes — and it is more common than you think. Many established builders run on websites built a decade ago that load slowly, break on mobile, and have no schema at all. Phase 1 of every engagement includes a technical overhaul: speed optimisation, mobile fixes, and proper site architecture. If a site is beyond saving, we will tell you straight and quote a rebuild rather than polishing something that cannot rank.",
+    },
+    {
+      q: "How is this different from hiring a general SEO agency?",
+      a: "General agencies chase traffic and vanity rankings. We chase signed building contracts. Every keyword, suburb silo and portfolio page is chosen for commercial intent and project value — and we only ever work with one builder per territory, so your investment never funds a competitor's rankings. You also work directly with a lead search architect who understands construction sales cycles, not an account manager juggling forty clients.",
     },
   ];
 
@@ -134,6 +159,77 @@ export default function BuildersSeoClient() {
                 <div className="text-slate-400">Schema Integrated</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pain Points Section */}
+      <section className="py-20 lg:py-28 bg-slate-50 border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-xs sm:text-sm font-bold text-red-900 shadow-sm">
+              <TrendingDown className="w-4 h-4 text-red-600" />
+              <span>The Invisible Builder Problem</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
+              Why Good Builders Lose <span className="gradient-text">$1M+ Contracts</span> Every Year
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600">
+              It is rarely about build quality. The builders winning the best Gold Coast contracts are simply the ones
+              Google shows first when a homeowner is ready to sign.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="card-clean rounded-3xl p-8 space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-red-100 flex items-center justify-center">
+                <Users className="w-6 h-6 text-red-600" />
+              </div>
+              <h3 className="text-xl font-black text-slate-900">The Aggregator Trap</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Platforms like hipages, Oneflare and ServiceSeeking sell the <em>same</em> lead to four or five builders
+                at once, then take their cut. You compete on price against builders you have never met, for a homeowner
+                who chose whoever replied fastest — not whoever builds best. Every year on aggregators trains the market
+                to treat your $800,000 custom build like a commodity.
+              </p>
+            </div>
+            <div className="card-clean rounded-3xl p-8 space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center">
+                <MapPinned className="w-6 h-6 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-black text-slate-900">Invisible in the Maps 3-Pack</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                When someone searches <strong>"custom home builder Hope Island"</strong> or{" "}
+                <strong>"luxury builder Burleigh Heads"</strong>, Google shows three businesses in the Maps 3-Pack — and
+                those three get the calls. If your Google Business Profile is unoptimised, miscategorised, or missing
+                suburb relevance, you do not exist for the highest-intent searches in your own territory.
+              </p>
+            </div>
+            <div className="card-clean rounded-3xl p-8 space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-indigo-100 flex items-center justify-center">
+                <ShieldAlert className="w-6 h-6 text-indigo-600" />
+              </div>
+              <h3 className="text-xl font-black text-slate-900">The Google Ads Money Pit</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                "Home builder Gold Coast" clicks cost $25 to $45 <em>each</em> — and a large share are job seekers,
+                suppliers, or researchers with no project. One month of serious Ads spend can exceed $8,000 with a
+                pipeline of tyre-kickers to show for it. The day you pause Ads, every inquiry stops. Organic rankings
+                keep compounding instead.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-10 max-w-3xl mx-auto rounded-2xl border border-indigo-200 bg-indigo-50/60 p-6 sm:p-8">
+            <p className="text-sm font-bold text-indigo-900 mb-2 flex items-center gap-2">
+              <HelpCircle className="w-4 h-4 text-indigo-600" />
+              Why do most Gold Coast builders still rely on word of mouth instead of Google?
+            </p>
+            <p className="text-sm text-slate-700 leading-relaxed">
+              Because word of mouth <em>worked</em> — until it did not. Referral pipelines are unpredictable: three great
+              months, then silence. Meanwhile a new generation of homeowners researches builders entirely on Google and
+              Google Maps, checking reviews, photos and QBCC licence details before ever calling. Builders who rank
+              capture that demand directly; builders who do not wait for the phone to ring.
+            </p>
           </div>
         </div>
       </section>
@@ -285,6 +381,130 @@ export default function BuildersSeoClient() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Methodology Section */}
+      <section className="py-20 lg:py-28 bg-white border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-xs sm:text-sm font-bold text-indigo-900 shadow-sm">
+              <Target className="w-4 h-4 text-indigo-600" />
+              <span>The Suburb Domination Framework</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight">
+              How We Rank <span className="gradient-text">Builders</span> in the Maps 3-Pack
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600">
+              A five-phase system built specifically for high-value building companies — not recycled generic SEO.
+            </p>
+          </div>
+
+          <div className="space-y-6 max-w-4xl mx-auto">
+            {[
+              {
+                n: "01",
+                t: "Google Business Profile Re-Architecture",
+                d: "We rebuild your GBP from the ground up: correct primary and secondary categories, service-area mapping across your target suburbs, geo-tagged project photos, product/service entries for each build type, and Q&A seeding. Most builder profiles we audit are missing half of these fields — which is exactly why they do not rank.",
+              },
+              {
+                n: "02",
+                t: "QBCC Licence & Entity Schema Integration",
+                d: "Your QBCC licence number, business entity details, service areas and reviews are encoded in structured schema markup on every page. This tells Google — and AI search engines like Gemini — precisely who you are, where you are licensed to build, and what you build. Entity clarity is what gets businesses cited in AI Overviews.",
+              },
+              {
+                n: "03",
+                t: "Affluent Suburb Micro-Silos",
+                d: "Instead of one generic 'builder Gold Coast' page, we build deep content silos for each high-value suburb: Hope Island waterfront builds, Robina knockdown-rebuilds, Burleigh architectural renovations. Each silo targets the exact phrases wealthy homeowners type — 'custom waterfront home builders 4212', 'dual living builders Coomera' — with zero wasted relevance.",
+              },
+              {
+                n: "04",
+                t: "Project Portfolio Authority",
+                d: "Completed builds become ranking assets. Each project gets its own optimised page: location, build type, contract value band, architect, and photography — all marked up with schema. A portfolio of ten documented $1M+ builds is proof Google can read, and it is proof competitors cannot copy overnight.",
+              },
+              {
+                n: "05",
+                t: "Review & Citation Engine",
+                d: "We systematise review generation at handover — the moment clients are happiest — and build NAP-consistent citations across Australian directories (True Local, Yellow Pages, LocalSearch, Hotfrog) plus Gold Coast-specific sources. Consistent citations plus a growing review profile is the compounding signal that holds 3-Pack positions.",
+              },
+            ].map((s) => (
+              <div key={s.n} className="card-clean rounded-2xl p-6 sm:p-8 flex gap-5 items-start">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-600 to-blue-600 text-white font-black flex items-center justify-center text-sm">
+                  {s.n}
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-lg sm:text-xl font-black text-slate-900">{s.t}</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{s.d}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 max-w-3xl mx-auto rounded-2xl border border-indigo-200 bg-indigo-50/60 p-6 sm:p-8 space-y-4">
+            <div>
+              <p className="text-sm font-bold text-indigo-900 mb-2 flex items-center gap-2">
+                <HelpCircle className="w-4 h-4 text-indigo-600" />
+                What exactly is a "suburb micro-silo"?
+              </p>
+              <p className="text-sm text-slate-700 leading-relaxed">
+                A micro-silo is a cluster of interlinked pages dedicated to one suburb and one build type — for example,
+                a hub page for "Custom Home Builder Hope Island" linking to child pages for waterfront builds,
+                knockdown-rebuilds and luxury renovations in 4212. Google reads the cluster as deep topical authority for
+                that suburb, which is why silo pages outrank generic single service pages.
+              </p>
+            </div>
+            <div className="pt-4 border-t border-indigo-100">
+              <p className="text-sm font-bold text-indigo-900 mb-2 flex items-center gap-2">
+                <HelpCircle className="w-4 h-4 text-indigo-600" />
+                How is this different from what a general SEO agency does?
+              </p>
+              <p className="text-sm text-slate-700 leading-relaxed">
+                General agencies optimise for traffic; we optimise for signed building contracts. Every keyword we target
+                is chosen for commercial intent and project value — "luxury custom home builder Sovereign Islands" will
+                always beat "building tips blog" in our strategy. And with 1-partner-per-territory exclusivity, we never
+                rank your competitor alongside you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Territories Section */}
+      <section className="py-20 lg:py-28 bg-slate-950 border-b border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-xs sm:text-sm font-bold text-indigo-300">
+              <Landmark className="w-4 h-4 text-indigo-400" />
+              <span>Exclusive Territories</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+              Gold Coast Builder Territories We Dominate
+            </h2>
+            <p className="text-base text-slate-400">
+              One partner per territory. When your suburb is claimed, it is locked — we will never work with your
+              direct competitor there.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            {[
+              ["Hope Island", "4212"], ["Sanctuary Cove", "4212"], ["Robina", "4226"], ["Burleigh Heads", "4220"],
+              ["Palm Beach", "4221"], ["Currumbin", "4223"], ["Tallebudgera", "4228"], ["Coolangatta", "4225"],
+              ["Broadbeach Waters", "4218"], ["Mermaid Waters", "4218"], ["Main Beach", "4217"], ["Surfers Paradise", "4217"],
+              ["Southport", "4215"], ["Arundel", "4214"], ["Helensvale", "4212"], ["Oxenford", "4210"],
+              ["Coomera", "4209"], ["Upper Coomera", "4209"], ["Pimpama", "4209"], ["Ormeau", "4208"],
+            ].map(([suburb, pc]) => (
+              <div key={suburb} className="rounded-xl bg-slate-900/80 border border-slate-800 px-4 py-3.5 flex items-center justify-between gap-2 hover:border-indigo-500/50 transition-colors">
+                <span className="text-sm font-bold text-white">{suburb}</span>
+                <span className="text-xs font-semibold text-indigo-300 bg-indigo-500/10 px-2 py-0.5 rounded-md">{pc}</span>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-sm text-slate-500 mt-8 max-w-2xl mx-auto">
+            Building outside these suburbs? We also partner with builders across the Tweed Coast and Brisbane on
+            application — <a href="#builder-audit" className="text-indigo-400 font-bold hover:text-indigo-300">ask about your territory →</a>
+          </p>
         </div>
       </section>
 
