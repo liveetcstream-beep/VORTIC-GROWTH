@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import TradieSeoClient from "./TradieSeoClient";
 
 export const metadata: Metadata = {
-  title: "Tradie SEO Gold Coast | #1 Local SEO & Google Maps for Contractors",
+  title: "Tradie SEO Gold Coast | Google Maps For Tradies",
   description:
-    "Dominate Google Maps 3-Pack across Pimpama, Coomera, Ormeau, and Gold Coast. Guaranteed exclusive local search framework for concreters, plumbers, electricians, and builders.",
+    "Dominate Google Maps 3-Pack Across Pimpama, Coomera And Gold Coast. Exclusive Local SEO For Concreters, Plumbers And Electricians.",
   alternates: {
     canonical: "https://www.vorticgrowth.com/tradie-seo-gold-coast",
   },
