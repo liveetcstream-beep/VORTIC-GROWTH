@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import ArticleAiRankClient from "./ArticleAiRankClient";
 
 export const metadata: Metadata = {
-  title: "How to Rank in Google AI Overviews & Perplexity | Gold Coast GEO",
+  title: "How To Rank In Google AI Overviews (2026) | Gold Coast GEO",
   description:
     "Master Generative Engine Optimization (GEO) for Gold Coast businesses. Get cited as the #1 recommended entity in Google Gemini and Perplexity search.",
   alternates: {
