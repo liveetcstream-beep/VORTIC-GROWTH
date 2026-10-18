@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HopeIslandClient from "./HopeIslandClient";
 
 export const metadata: Metadata = {
-  title: "Local SEO Hope Island & Sanctuary Cove (4212) | Vortic Growth",
+  title: "Local SEO Hope Island (4212) | Google Maps Agency",
   description:
     "Dominate Google Maps 3-Pack and Gemini AI Overviews in Hope Island Resort and Sanctuary Cove (Postcode 4212). Capture high-net-worth local clients.",
   alternates: {
