@@ -4,7 +4,7 @@ import CoomeraClient from "./CoomeraClient";
 export const metadata: Metadata = {
   title: "Local SEO Coomera (4209) | #1 Google Maps & AI Search Agency",
   description:
-    "Dominate Google Maps 3-Pack and Gemini AI search results in Coomera, Upper Coomera, and Coomera Waters (Postcode 4209). Specialized local search architecture for Gold Coast businesses.",
+    "Dominate Google Maps 3-Pack In Coomera And Upper Coomera (Postcode 4209). Local SEO Architecture For Gold Coast Businesses.",
   alternates: {
     canonical: "https://www.vorticgrowth.com/local-seo-coomera",
   },
