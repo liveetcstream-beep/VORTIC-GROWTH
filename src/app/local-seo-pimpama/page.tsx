@@ -4,7 +4,7 @@ import PimpamaClient from "./PimpamaClient";
 export const metadata: Metadata = {
   title: "Local SEO Pimpama (4209) | #1 Google Maps & AI Search Agency",
   description:
-    "Dominate Google Maps 3-Pack and Gemini AI Overviews in Pimpama (Postcode 4209). Suburb-specific search architecture for Gold Coast tradies, builders, and local services.",
+    "Dominate Google Maps 3-Pack In Pimpama (Postcode 4209). Suburb-Specific SEO For Gold Coast Tradies, Builders And Local Services.",
   alternates: {
     canonical: "https://www.vorticgrowth.com/local-seo-pimpama",
   },
