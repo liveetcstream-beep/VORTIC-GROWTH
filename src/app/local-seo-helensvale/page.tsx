@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HelensvaleClient from "./HelensvaleClient";
 
 export const metadata: Metadata = {
-  title: "Local SEO Helensvale (4212) | #1 Google Maps & AI Search Agency",
+  title: "Local SEO Helensvale (4212) | Google Maps Agency",
   description:
     "Dominate Google Maps 3-Pack and Gemini AI Overviews in Helensvale (Postcode 4212). Exclusive local search architecture for Northern Gold Coast businesses.",
   alternates: {
