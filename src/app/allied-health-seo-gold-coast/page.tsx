@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import AlliedHealthClient from "./AlliedHealthClient";
 
 export const metadata: Metadata = {
-  title: "Allied Health SEO Gold Coast | #1 Local SEO for Medical Clinics",
+  title: "Allied Health SEO Gold Coast | For Medical Clinics",
   description:
     "Dominate Google Maps 3-Pack across Gold Coast postcodes. AHPRA-compliant local search engine architecture for Allied Health practices.",
   alternates: {
