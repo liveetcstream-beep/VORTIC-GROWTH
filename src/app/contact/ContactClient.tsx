@@ -15,10 +15,13 @@ import {
   ShieldCheck,
   Building,
   Check,
+  ChevronDown,
+  HelpCircle,
 } from "lucide-react";
 
 export default function ContactClient() {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,6 +32,74 @@ export default function ContactClient() {
     suburb: "",
     message: "",
   });
+
+  const serviceAreas = [
+    {
+      region: "Northern Gold Coast",
+      suburbs: [
+        ["Pimpama", "4209"], ["Coomera", "4209"], ["Upper Coomera", "4209"],
+        ["Ormeau", "4208"], ["Yatala", "4207"], ["Jacobs Well", "4208"],
+        ["Helensvale", "4212"], ["Oxenford", "4210"], ["Willow Vale", "4209"],
+        ["Kingsholme", "4208"], ["Luscombe", "4208"], ["Guanaba", "4210"],
+      ],
+    },
+    {
+      region: "Central Gold Coast",
+      suburbs: [
+        ["Southport", "4215"], ["Surfers Paradise", "4217"], ["Main Beach", "4217"],
+        ["Broadbeach", "4218"], ["Bundall", "4217"], ["Ashmore", "4214"],
+        ["Molendinar", "4214"], ["Arundel", "4214"], ["Parkwood", "4214"],
+        ["Labrador", "4219"], ["Biggera Waters", "4216"], ["Runaway Bay", "4216"],
+        ["Paradise Point", "4216"], ["Hope Island", "4212"], ["Sanctuary Cove", "4212"],
+        ["Hollywell", "4216"], ["Coombabah", "4216"],
+      ],
+    },
+    {
+      region: "Southern Gold Coast",
+      suburbs: [
+        ["Burleigh Heads", "4220"], ["Miami", "4220"], ["Mermaid Beach", "4218"],
+        ["Mermaid Waters", "4218"], ["Robina", "4226"], ["Varsity Lakes", "4227"],
+        ["Palm Beach", "4221"], ["Currumbin", "4223"], ["Currumbin Waters", "4223"],
+        ["Tugun", "4224"], ["Bilinga", "4225"], ["Coolangatta", "4225"],
+        ["Kirra", "4225"], ["Elanora", "4221"],
+      ],
+    },
+    {
+      region: "Hinterland & West",
+      suburbs: [
+        ["Nerang", "4211"], ["Carrara", "4211"], ["Worongary", "4213"],
+        ["Mudgeeraba", "4213"], ["Tallai", "4213"], ["Bonogin", "4213"],
+        ["Austinville", "4213"], ["Gilston", "4211"], ["Advancetown", "4211"],
+      ],
+    },
+  ];
+
+  const faqs = [
+    {
+      q: "How quickly will I hear back after submitting the form?",
+      a: "Within 2 business hours during AEST business hours (Mon–Fri, 8am–6pm). Messages sent overnight or on weekends are answered first thing the next business day. For the fastest response, use the WhatsApp line directly — it goes straight to Bilal, not a sales queue.",
+    },
+    {
+      q: "What exactly is included in the free 15-minute strategy audit?",
+      a: "A live snapshot of your Google Maps rankings, who's holding the 3-Pack in your target suburbs, and the quick wins we can spot in your Google Business Profile. It's a working session, not a sales pitch — you keep every insight regardless of what you decide next.",
+    },
+    {
+      q: "Do I have to be based on the Gold Coast to work with you?",
+      a: "No. We're headquartered on the Gold Coast and most of our case-study clients are local, but we run campaigns for businesses across Brisbane and Australia-wide. Every audit, report, and strategy call happens remotely over WhatsApp and video. Local SEO is local to your customers, not to our office — distance never affects the quality of the work.",
+    },
+    {
+      q: "Is there a lock-in contract?",
+      a: "No. Our retainers are month-to-month with no lock-in contracts. We keep clients by producing rankings and calls, not by paperwork — if the results ever stop, you should be free to walk away. That arrangement keeps us accountable every single month.",
+    },
+    {
+      q: "Why do you only take one client per trade per territory?",
+      a: "Because we can't ethically rank two competing concreters in Pimpama at the same time. Exclusivity means that when we take you on, every ranking we win in your corridor belongs to you alone — your competitor can't hire us to take it back.",
+    },
+    {
+      q: "Do you guarantee #1 Google rankings?",
+      a: "No — and you should be wary of any agency that does. Nobody controls Google's algorithm, and a guarantee is a marketing gimmick, not a strategy. What we offer instead is a proven methodology, verified case studies with real numbers, and month-to-month terms so we earn your business continuously.",
+    },
+  ];
 
   return (
     <main className="min-h-screen flex flex-col bg-white">
@@ -285,6 +356,128 @@ export default function ContactClient() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* What Happens Next Section */}
+      <section className="py-20 bg-white border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-4">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-xs sm:text-sm font-bold text-indigo-900 shadow-sm">
+              <Clock className="w-4 h-4 text-indigo-600" />
+              <span>After You Hit Send</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight">
+              What Happens <span className="gradient-text">After You Contact Us?</span>
+            </h2>
+            <p className="text-base text-slate-600 leading-relaxed">
+              No black hole, no "we'll be in touch sometime next week." Here is exactly what happens from the moment your inquiry lands.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="card-clean p-8 rounded-3xl border border-slate-200 bg-white space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black text-lg shadow-lg shadow-indigo-600/30">1</div>
+              <h3 className="text-lg font-extrabold text-slate-950">We Reply Within 2 Business Hours</h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Every inquiry lands directly with Bilal — not a sales rep, not a VA queue. During AEST business hours (Mon–Fri, 8am–6pm) expect a personal reply within 2 hours. Messages sent overnight or on weekends are answered first thing the next business day. WhatsApp is the fastest channel if you're in a hurry.
+              </p>
+            </div>
+            <div className="card-clean p-8 rounded-3xl border border-slate-200 bg-white space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black text-lg shadow-lg shadow-indigo-600/30">2</div>
+              <h3 className="text-lg font-extrabold text-slate-950">We Prepare Your Free Maps Audit</h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Before the 15-minute strategy call, we pull your live Google Maps rankings, snapshot who's holding the 3-Pack in your target suburbs, and list the quick wins we can see in your profile. You get genuine insight on the call whether or not you ever become a client — no generic pitch deck.
+              </p>
+            </div>
+            <div className="card-clean p-8 rounded-3xl border border-slate-200 bg-white space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black text-lg shadow-lg shadow-indigo-600/30">3</div>
+              <h3 className="text-lg font-extrabold text-slate-950">Honest Territory Check — Including "No"</h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                We only partner with one business per trade corridor, so we check availability first. If your territory is already taken — or if we can see your situation doesn't need us — we'll tell you straight and point you in the right direction. We'd rather lose a lead than take on a client we can't genuinely help.
+              </p>
+            </div>
+          </div>
+
+          {/* Inline Reader Question */}
+          <div className="max-w-4xl mx-auto p-6 sm:p-8 rounded-3xl bg-indigo-50/60 border border-indigo-100 space-y-3">
+            <h3 className="text-lg font-extrabold text-slate-950">Do I need to be based on the Gold Coast to work with you?</h3>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              No. We're headquartered on the Gold Coast and most of our case-study clients are local, but we run campaigns for businesses across Brisbane and Australia-wide. Everything — audits, reporting, strategy calls — runs remotely over WhatsApp and video. Local SEO is local to your customers, not to our office.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="py-20 bg-slate-50/50 border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-4">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-xs sm:text-sm font-bold text-indigo-900 shadow-sm">
+              <MapPin className="w-4 h-4 text-indigo-600" />
+              <span>Territories We Serve</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight">
+              Gold Coast Suburbs <span className="gradient-text">We Rank Businesses In</span>
+            </h2>
+            <p className="text-base text-slate-600 leading-relaxed">
+              Our campaigns run suburb by suburb across the entire Gold Coast — from the northern growth corridor to the southern coastal strip. Find your postcode below, or ask us about Brisbane's southside and beyond.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {serviceAreas.map((area, aIdx) => (
+              <div key={aIdx} className="card-clean p-6 sm:p-8 rounded-3xl border border-slate-200 bg-white space-y-4">
+                <h3 className="text-base font-extrabold text-slate-950">{area.region}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {area.suburbs.map(([suburb, postcode], sIdx) => (
+                    <span key={sIdx} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-xs font-bold text-slate-700">
+                      <MapPin className="w-3 h-3 text-indigo-500" />
+                      {suburb} <span className="text-slate-400 font-semibold">{postcode}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-xs sm:text-sm text-slate-500 max-w-2xl mx-auto">
+            Targeting Brisbane's southside, the Tweed, or elsewhere in Australia? Our remote campaigns run Australia-wide — mention your suburbs in the form above and we'll check the competitive landscape for you.
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-white border-b border-slate-200/80">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="text-center space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-xs font-bold text-indigo-900">
+              <HelpCircle className="w-3.5 h-3.5" />
+              <span>Before You Reach Out</span>
+            </div>
+            <h2 className="text-3xl font-extrabold text-slate-950 tracking-tight">Contact Questions, Answered</h2>
+            <p className="text-xs sm:text-sm text-slate-600">
+              Response times, the free audit, contracts, and the honest limits of what any SEO agency can promise.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {faqs.map((faq, idx) => (
+              <div key={idx} className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                <button
+                  onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                  className="w-full p-6 text-left font-bold text-slate-950 flex items-center justify-between gap-4"
+                >
+                  <span className="text-sm sm:text-base">{faq.q}</span>
+                  <ChevronDown className={`w-5 h-5 text-indigo-600 transition-transform shrink-0 ${openFaq === idx ? "rotate-180" : ""}`} />
+                </button>
+                {openFaq === idx && (
+                  <div className="px-6 pb-6 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                    {faq.a}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
