@@ -4,7 +4,7 @@ import OrmeauClient from "./OrmeauClient";
 export const metadata: Metadata = {
   title: "Local SEO Ormeau (4208) | #1 Google Maps & AI Agency",
   description:
-    "Dominate Google Maps 3-Pack and Gemini AI Overviews in Ormeau, Ormeau Hills, and Kingsholme (Postcode 4208). Exclusive local search framework for contractors.",
+    "Dominate Google Maps 3-Pack In Ormeau And Ormeau Hills (Postcode 4208). Local SEO Framework For Contractors.",
   alternates: {
     canonical: "https://www.vorticgrowth.com/local-seo-ormeau",
   },
