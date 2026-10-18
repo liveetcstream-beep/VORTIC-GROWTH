@@ -5,10 +5,24 @@ import { MessageSquare, Phone, Mail, MapPin, ShieldCheck, ArrowUp } from "lucide
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const suburbs = [
-    "Pimpama QLD", "Coomera QLD", "Ormeau QLD", "Helensvale QLD",
-    "Southport QLD", "Surfers Paradise QLD", "Burleigh Heads QLD", "Robina QLD",
-    "Varsity Lakes QLD", "Palm Beach QLD", "Coolangatta QLD", "Brisbane QLD"
+  const suburbs: { name: string; href?: string }[] = [
+    { name: "Pimpama QLD", href: "/local-seo-pimpama" },
+    { name: "Coomera QLD", href: "/local-seo-coomera" },
+    { name: "Ormeau QLD", href: "/local-seo-ormeau" },
+    { name: "Yatala QLD", href: "/local-seo-yatala" },
+    { name: "Helensvale QLD", href: "/local-seo-helensvale" },
+    { name: "Oxenford QLD", href: "/local-seo-oxenford" },
+    { name: "Arundel QLD", href: "/local-seo-arundel" },
+    { name: "Hope Island QLD", href: "/local-seo-hope-island" },
+    { name: "Runaway Bay QLD", href: "/local-seo-runaway-bay" },
+    { name: "Southport QLD" },
+    { name: "Surfers Paradise QLD" },
+    { name: "Burleigh Heads QLD" },
+    { name: "Robina QLD" },
+    { name: "Varsity Lakes QLD" },
+    { name: "Palm Beach QLD" },
+    { name: "Coolangatta QLD" },
+    { name: "Brisbane QLD" },
   ];
 
   return (
@@ -51,6 +65,10 @@ export default function Footer() {
               <li><a href="/local-seo-pimpama" className="text-indigo-400 font-bold hover:text-white transition-colors">📌 Local SEO Pimpama (4209)</a></li>
               <li><a href="/local-seo-coomera" className="text-purple-400 font-bold hover:text-white transition-colors">📌 Local SEO Coomera (4209)</a></li>
               <li><a href="/dental-seo" className="text-blue-400 font-bold hover:text-white transition-colors">🦷 Dental & Medical Clinics SEO</a></li>
+              <li><a href="/allied-health-seo-gold-coast" className="text-teal-300 font-bold hover:text-white transition-colors">🩺 Allied Health SEO</a></li>
+              <li><a href="/builders-seo" className="text-orange-300 font-bold hover:text-white transition-colors">🏠 Custom Builders SEO</a></li>
+              <li><a href="/roofing-seo-gold-coast" className="text-red-300 font-bold hover:text-white transition-colors">🏘️ Roofing SEO</a></li>
+              <li><a href="/electricians-seo-gold-coast" className="text-yellow-300 font-bold hover:text-white transition-colors">⚡ Electricians SEO</a></li>
               <li><a href="/concreters-seo" className="text-indigo-300 font-bold hover:text-white transition-colors">🏗️ Concrete & Trade SEO</a></li>
               <li><a href="/case-studies" className="text-sky-400 font-bold hover:text-white transition-colors">📈 Verified Case Studies</a></li>
               <li><a href="/blog" className="text-purple-300 font-bold hover:text-white transition-colors">📚 Insights & Authority Hub</a></li>
@@ -125,9 +143,15 @@ export default function Footer() {
           <span className="font-bold text-slate-300">Active Territory Coverage:</span>
           <div className="flex flex-wrap gap-2">
             {suburbs.map((suburb, i) => (
-              <span key={i} className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-[11px]">
-                {suburb}
-              </span>
+              suburb.href ? (
+                <a key={i} href={suburb.href} className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-indigo-300 hover:text-white hover:border-indigo-500/60 text-[11px] font-semibold transition-colors">
+                  {suburb.name}
+                </a>
+              ) : (
+                <span key={i} className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-[11px]">
+                  {suburb.name}
+                </span>
+              )
             ))}
           </div>
         </div>
