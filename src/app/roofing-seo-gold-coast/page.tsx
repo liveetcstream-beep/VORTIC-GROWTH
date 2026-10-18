@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import RoofingClient from "./RoofingClient";
 
 export const metadata: Metadata = {
-  title: "Roofing SEO Gold Coast | #1 Local SEO for Roof Restoration & Metal Roofers",
+  title: "Roofing SEO Gold Coast | Google Maps For Roofers",
   description:
     "Dominate Google Maps 3-Pack across Gold Coast suburbs. Exclusive local search framework for roofing contractors and restorations.",
   alternates: {
