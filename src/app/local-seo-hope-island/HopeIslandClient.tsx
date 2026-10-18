@@ -241,14 +241,13 @@ export default function HopeIslandClient() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
             Timing matters as much as visibility here. Marine trades ride a seasonal wave that peaks around the Sanctuary Cove International Boat Show, when the 300+ berth marina fills with buyers actively spending. Landscapers and outdoor builders surge through the dry winter months when waterfront entertaining moves outside, while tourism-driven foot traffic around the marina village lifts hospitality-adjacent trades in school holidays. A Hope Island SEO campaign has to be tuned to these rhythms — ranking hardest exactly when the highest-value clients are searching.
           </p>
         </div>
       </section>
+
 
       {/* Definition box — AEO/GEO */}
       <section className="py-16 bg-slate-900/40 border-b border-slate-800">
