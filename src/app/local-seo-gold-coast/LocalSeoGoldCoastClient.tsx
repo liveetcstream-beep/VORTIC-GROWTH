@@ -272,7 +272,7 @@ export default function LocalSeoGoldCoastPage() {
             </h2>
 
             <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-              We build hyper-localized organic micro-silos across every high-income postcode and growth corridor on the Gold Coast.
+              We build hyper-localized organic micro-silos across every high-income postcode and growth corridor on the Gold Coast. Affluent waterfront enclaves get the same treatment — see our <a href="/local-seo-hope-island" className="text-indigo-600 hover:underline font-semibold">Local SEO Hope Island</a> service for the 4212 postcode.
             </p>
           </div>
 
