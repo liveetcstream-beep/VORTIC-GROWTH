@@ -2,14 +2,14 @@ import { Metadata } from "next";
 import ConcretersSeoClient from "./ConcretersSeoClient";
 
 export const metadata: Metadata = {
-  title: "Concreters SEO Gold Coast | Google Maps for Tradies",
+  title: "SEO For Concrete Contractors Gold Coast | Concreters",
   description:
     "Dominate 57 Gold Coast suburbs on Google Maps. QBCC-compliant tradie SEO generating 40+ exclusive monthly quote calls.",
   alternates: {
     canonical: "https://www.vorticgrowth.com/concreters-seo",
   },
   openGraph: {
-    title: "Concreters SEO Gold Coast | Google Maps for Tradies",
+    title: "SEO For Concrete Contractors Gold Coast | Concreters",
     description:
       "Dominate 57 Gold Coast suburbs on Google Maps. QBCC-compliant tradie SEO generating 40+ exclusive monthly quote calls.",
     url: "https://www.vorticgrowth.com/concreters-seo",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Concreters SEO Gold Coast | Google Maps for Tradies",
+    title: "SEO For Concrete Contractors Gold Coast | Concreters",
     description:
       "Dominate 57 Gold Coast suburbs on Google Maps. QBCC-compliant tradie SEO generating 40+ exclusive monthly quote calls.",
     images: ["/og-image.jpg"],
