@@ -148,12 +148,12 @@ export default function ConcretersSeoPage() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-950 tracking-tight leading-[1.12]">
-                Dominate Google Maps & Lock In{" "}
+                SEO For Concrete Contractors To Dominate Google Maps & Lock In{" "}
                 <span className="gradient-text">40+ Inbound Concreting Jobs</span> Every Month
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl">
-                We engineer hyper-local suburb search engines and Google Maps 3-Pack supremacy for concrete contractors. Stop fighting 5 other tradies on HiPages and turn your mobile into a 24/7 exclusive inbound quote machine.
+                We engineer hyper-local suburb search engines and Google Maps 3-Pack supremacy for concrete contractors. Our local SEO for concreting turns your mobile into a 24/7 exclusive inbound quote machine — no more fighting 5 other tradies on HiPages.
               </p>
 
               {/* CTAs */}
@@ -840,7 +840,7 @@ export default function ConcretersSeoPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-14">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight">
-              Concreter SEO <span className="gradient-text">FAQ</span>
+              Local SEO For Concreting <span className="gradient-text">FAQ</span>
             </h2>
           </div>
 
