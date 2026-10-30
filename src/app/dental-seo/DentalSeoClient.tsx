@@ -182,14 +182,14 @@ export default function DentalSeoPage() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-950 tracking-tight leading-[1.12]">
-                Fill Your Dental Chairs With{" "}
+                Dental SEO Services Gold Coast: Fill Your Chairs With{" "}
                 <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 bg-clip-text text-transparent">
                   High-Margin Implant & Cosmetic Patients
                 </span>
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl">
-                We engineer Google Maps 3-Pack supremacy and Google AI Overview citations for Australian dental practices. Stop burning $120+ per click on Google Ads and capture <strong>35+ high-value treatment inquiries every month</strong> with zero ongoing ad spend.
+                We engineer Google Maps 3-Pack supremacy and Google AI Overview citations for Australian dental practices. Our local SEO for dentists on the Gold Coast — and in Brisbane — captures <strong>35+ high-value treatment inquiries every month</strong> with zero ongoing ad spend, instead of burning $120+ per click on Google Ads.
               </p>
 
               {/* CTAs */}
@@ -819,7 +819,7 @@ export default function DentalSeoPage() {
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight leading-tight">
-                Request Your Practice&apos;s <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Free Dental SEO Audit</span>
+                Request Your <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Free Dental SEO Audit</span> For Gold Coast Dentists
               </h2>
 
               <p className="text-base text-slate-600 leading-relaxed">
@@ -983,7 +983,7 @@ export default function DentalSeoPage() {
           
           <div className="text-center space-y-4 mb-14">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight">
-              Dental Practice Growth <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">FAQ</span>
+              Dental SEO Agency <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">FAQ</span> For Gold Coast And Brisbane Dentists
             </h2>
             <p className="text-slate-600 text-sm sm:text-base">
               Common questions from Australian dentists and practice managers regarding SEO and AHPRA compliance.
