@@ -2,14 +2,14 @@ import { Metadata } from "next";
 import DentalSeoClient from "./DentalSeoClient";
 
 export const metadata: Metadata = {
-  title: "Dental SEO Gold Coast | Google Maps for Dentists",
+  title: "SEO For Dentists Gold Coast | Dental SEO Services",
   description:
     "Attract 25+ high-value dental implant & cosmetic patients monthly. AHPRA-compliant local SEO for Australian clinics.",
   alternates: {
     canonical: "https://www.vorticgrowth.com/dental-seo",
   },
   openGraph: {
-    title: "Dental SEO Gold Coast | Google Maps for Dentists",
+    title: "SEO For Dentists Gold Coast | Dental SEO Services",
     description:
       "Attract 25+ high-value dental implant & cosmetic patients monthly. AHPRA-compliant local SEO for Australian clinics.",
     url: "https://www.vorticgrowth.com/dental-seo",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dental SEO Gold Coast | Google Maps for Dentists",
+    title: "SEO For Dentists Gold Coast | Dental SEO Services",
     description:
       "Attract 25+ high-value dental implant & cosmetic patients monthly. AHPRA-compliant local SEO for Australian clinics.",
     images: ["/og-image.jpg"],
